@@ -50,8 +50,7 @@ Shader::Shader(std::string vsSource, std::string fsSource) : mID(0) {
         GLsizei log_length = 0;
         GLchar message[1024];
         glGetShaderInfoLog(vs, 1024, &log_length, message);
-        printf("Vertex Shader Compilation Failed:\n%s\n == SOURCE ==\n%s\n",
-               message, vsSource_cstr);
+        printf("Vertex Shader Compilation Failed:\n%s\n == SOURCE ==\n%s\n", message, vsSource_cstr);
 
         return;
     }
@@ -83,6 +82,8 @@ Shader::Shader(std::string vsSource, std::string fsSource) : mID(0) {
         return;
     }
 }
+
+void Shader::SetInt(std::string name, int value) { glUniform1i(GetUniformLocation(name), value); }
 
 Shader *Shader::Load(std::string vsPath, std::string fsPath) {
     std::ifstream vs_file(vsPath);

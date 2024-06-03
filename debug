@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+
 premake5 gmake2
-make config=release
+make config=debug
 ./bin/Phoenix

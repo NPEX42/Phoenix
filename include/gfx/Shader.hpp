@@ -14,6 +14,9 @@ public:
     Shader(std::string vsSource, std::string fsSource);
     static Shader *Load(std::string vsPath, std::string fsPath);
 
+public:
+    void SetInt(std::string name, int value);
+
 private:
     uint32_t mID;
     std::unordered_map<std::string, uint32_t> mUniforms;

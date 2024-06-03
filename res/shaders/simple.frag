@@ -5,6 +5,8 @@ layout(location = 1) in vec2 vUV;
 
 layout(location = 0) out vec4 fragColor;
 
+uniform sampler2D uAlbedo; 
+
 void main() {
-	fragColor = vec4(vUV, 1.0, 1.0);
+	fragColor = vec4(vColor, 1.0) * texture(uAlbedo, vUV);
 }
