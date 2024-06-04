@@ -71,7 +71,7 @@ int main() {
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glEnable(GL_BLEND);
     glm::vec2 quad_size = {5, 0};
-    int max_snoms = 100;
+    int max_snoms = 0;
 
     std::vector<glm::vec2> snom_positions;
     snom_positions.resize(max_snoms);
@@ -124,7 +124,7 @@ int main() {
         ImGui::Text("Batches: %d", phnx::gfx::BatchCount());
         //}
 
-        ImGui::SliderFloat("Snom Scale Div.", &quad_size.x, 1.0f, 20.0f);
+        ImGui::SliderFloat("Snom Scale Div.", &quad_size.x, 1.0f, 100.0f);
 
         if (ImGui::Checkbox("Alpha Blending", &enableBlend)) {
             if (enableBlend) {
