@@ -31,7 +31,8 @@ links({
 filter("system:linux")
 defines({ "PLATFORM_LINUX" })
 
-filter("configurations:debug")
+filter("configurations:Debug")
+optimize("Off")
 
 filter("configurations:Release")
 defines({ "NDEBUG" })

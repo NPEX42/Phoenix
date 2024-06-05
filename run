@@ -1,4 +1,9 @@
 #!/usr/bin/bash
+conf=${1-"debug"}
 premake5 gmake2
-make config=release
+if [ "$1" == "clean" ]; then
+make clean
+exit 0
+fi
+make config=$conf || exit
 ./bin/Phoenix

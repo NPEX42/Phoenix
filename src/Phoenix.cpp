@@ -91,8 +91,12 @@ int main() {
 
         phnx::gfx::Clear(0.1, 0.2, 0.3, 1.0);
         double draw_start = glfwGetTime();
+
+        glm::vec2 size = snom->Size() / quad_size.x;
+        glm::vec3 white = {1, 1, 1};
         for (glm::vec2 &pos : snom_positions) {
-            phnx::gfx::Quad(pos, snom->Size() / quad_size.x, {1, 1, 1});
+
+            phnx::gfx::Quad(pos, size, white);
         }
         double draw_end = glfwGetTime();
         double draw_time = draw_end - draw_start;
@@ -103,7 +107,7 @@ int main() {
 
         ImGui::Text("DeltaTime: %03.2f ms - %02.2f fps", (deltaTime * 1000.0f), 1.0f / deltaTime);
         ImGui::Text("Draw Loop Time: %03.2f ms (%03.2f us/Snom)", (draw_time * 1000.0f),
-                    (draw_time / max_snoms) * 10000000.0f);
+                    (draw_time / max_snoms) * 100000000.0f);
 
         ImGui::Separator();
 
@@ -113,15 +117,23 @@ int main() {
         //     }
         //
 
-        if (deltaTime < 0.0167) {
+        if (deltaTime < (1 / 60.0f)) {
             for (int i = 0; i < 128; i++) {
-                snom_positions.push_back({RandFloat(1080), RandFloat(720)});
+                snom_positions.push_back({1080 / 2.0f, 720 / 2.0f});
                 max_snoms += 1;
             }
         }
 
+        if (deltaTime > (1 / 55.0f)) {
+            for (int i = 0; i < 1024; i++) {
+                snom_positions.pop_back();
+                max_snoms -= 1;
+            }
+        }
+
         ImGui::Text("Snoms: %d - Snoms / Second: %d", max_snoms, (int)(max_snoms / deltaTime));
-        ImGui::Text("Batches: %d", phnx::gfx::BatchCount());
+        ImGui::Text("Batches: %d - Render Time: %01.2f us last batch", phnx::gfx::BatchCount(),
+                    phnx::gfx::RenderTime() / 1000.0f);
         //}
 
         ImGui::SliderFloat("Snom Scale Div.", &quad_size.x, 1.0f, 100.0f);

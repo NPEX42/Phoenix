@@ -20,10 +20,13 @@ namespace gfx {
 static uint32_t vaoID;
 static uint32_t vboID;
 
-#define MAX_QUADS (4096)
+static uint32_t renderTimeQueryID;
+static int32_t renderTimeSum;
+
+#define MAX_QUADS (8192)
 #define MAX_TRIS (MAX_QUADS * 2)
 #define MAX_INDICES (MAX_TRIS * 3)
-#define MAX_VERTS (MAX_QUADS * 6)
+#define MAX_VERTS (MAX_QUADS * 4)
 
 #define POSITION_INDEX 0
 #define COLOR_INDEX 1
@@ -50,7 +53,7 @@ void SetFrameSize(float w, float h) {
     proj = glm::ortho(0.0f, w, h, 0.0f);
 }
 
-void Quad(glm::vec2 ctr, glm::vec2 size, glm::vec3 color) {
+void Quad(glm::vec2 &ctr, glm::vec2 &size, glm::vec3 &color) {
     Vertex2D tl, tr, bl, br;
 
     tr.mPosition.x = ctr.x + size.x / 2.0f;
@@ -79,9 +82,7 @@ void Quad(glm::vec2 ctr, glm::vec2 size, glm::vec3 color) {
     PushVertex(br);
     PushVertex(bl);
 
-    PushVertex(bl);
     PushVertex(tl);
-    PushVertex(tr);
 }
 
 void Init() {
@@ -110,7 +111,10 @@ void Init() {
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-    printf("Initialized Renderer2D - Vertex2D Size: %d Bytes\n", stride);
+    glGenQueries(1, &renderTimeQueryID);
+
+    printf("Initialized Renderer2D - Vertex2D Size: %d Bytes - %03fMB / Batch\n", stride,
+           (float)(stride * MAX_VERTS) / (float)(1 << 20));
 }
 
 void Flush() {
@@ -123,7 +127,9 @@ void Flush() {
 
     glBindBuffer(GL_ARRAY_BUFFER, vboID);
     glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(Vertex2D) * vertexPtr, vertices);
-    glDrawArrays(GL_TRIANGLES, 0, vertexPtr);
+    glBeginQuery(GL_TIME_ELAPSED, renderTimeQueryID);
+    glDrawArrays(GL_QUADS, 0, vertexPtr);
+    glEndQuery(GL_TIME_ELAPSED);
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
@@ -162,7 +168,16 @@ void SetAlbedo(std::shared_ptr<Texture2D> albedo) {
 
 int BatchCount() { return batches; }
 
-void ResetStats() { batches = 0; }
+int RenderTime() {
+    uint64_t renderTime;
+    glGetQueryObjectui64v(renderTimeQueryID, GL_QUERY_RESULT, &renderTime);
+    return renderTime;
+}
+
+void ResetStats() {
+    batches = 0;
+    renderTimeSum = 0;
+}
 
 } // namespace gfx
 } // namespace phnx

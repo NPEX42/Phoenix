@@ -39,8 +39,8 @@ endef
 ifeq ($(config),debug)
 OBJDIR = obj/Debug
 DEFINES += -DPLATFORM_LINUX
-ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64
-ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64
+ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O0
+ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0
 
 else ifeq ($(config),release)
 OBJDIR = obj/Release
