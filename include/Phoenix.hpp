@@ -1,6 +1,4 @@
 #pragma once
-
-#include <cstdint>
 #include <cstdio>
 #include <string>
 #ifdef PLATFORM_LINUX
@@ -12,7 +10,6 @@ typedef struct GLFWwindow GLFWwindow;
 namespace phnx {
 void Init();
 void PollEvents();
-
 class Window {
 public:
     int Height();
@@ -30,5 +27,7 @@ private:
 };
 
 void InitOpenGL(Window &w);
+
+
 
 } // namespace phnx

@@ -1,4 +1,4 @@
-#include "gfx/Texture.hpp"
+#include "Phoenix/gfx/Texture.hpp"
 #include "glm/ext/matrix_float4x4.hpp"
 #include "glm/ext/matrix_transform.hpp"
 #include "glm/ext/vector_float2.hpp"
@@ -7,7 +7,7 @@
 #include <complex>
 #include <cstddef>
 #include <cstdint>
-#include <gfx/Renderer2D.hpp>
+#include <Phoenix/gfx/Renderer2D.hpp>
 #include <glad/glad.h>
 
 #include <glm/gtc/matrix_transform.hpp>
@@ -32,7 +32,6 @@ static int32_t renderTimeSum;
 #define COLOR_INDEX 1
 #define TEXCOORD_INDEX 2
 
-static uint16_t indices[MAX_INDICES];
 static Vertex2D vertices[MAX_VERTS];
 static uint16_t indexPtr = 0;
 static uint16_t vertexPtr = 0;
@@ -40,6 +39,7 @@ static uint16_t vertexPtr = 0;
 static std::shared_ptr<Texture2D> activeAlbedo;
 
 static glm::mat4x4 proj;
+static float Width = 1, Height = 1;
 
 static int batches;
 
@@ -51,9 +51,12 @@ void Clear(float r, float g, float b, float a) {
 void SetFrameSize(float w, float h) {
     Flush();
     proj = glm::ortho(0.0f, w, h, 0.0f);
+    glViewport(0, 0, w, h);
+    Width = w;
+    Height = h;
 }
 
-void Quad(glm::vec2 &ctr, glm::vec2 &size, glm::vec3 &color) {
+void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color) {
     Vertex2D tl, tr, bl, br;
 
     tr.mPosition.x = ctr.x + size.x / 2.0f;
@@ -157,13 +160,18 @@ void PushVertex(Vertex2D v) {
 }
 
 void SetAlbedo(std::shared_ptr<Texture2D> albedo) {
+
+    if (albedo == nullptr) {
+        return;
+    }
+
     if (activeAlbedo == nullptr || activeAlbedo->ID() != albedo->ID()) {
         Flush();
     }
 
     activeAlbedo = albedo;
 
-    activeAlbedo->SetUnit(1);
+    activeAlbedo->SetUnit(0);
 }
 
 int BatchCount() { return batches; }
@@ -177,6 +185,23 @@ int RenderTime() {
 void ResetStats() {
     batches = 0;
     renderTimeSum = 0;
+}
+
+
+float FrameWidthF() {
+    return Width;
+}
+
+float FrameHeightF() {
+    return Height;
+}
+
+int FrameWidth() {
+    return Width;
+}
+
+int FrameHeight() {
+    return Height;
 }
 
 } // namespace gfx

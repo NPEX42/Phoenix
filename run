@@ -5,5 +5,14 @@ if [ "$1" == "clean" ]; then
 make clean
 exit 0
 fi
+if [ "$1" == "gdb" ]; then
+conf="debug"
+fi
 make config=$conf || exit
-./bin/Phoenix
+
+if [ "$1" == "gdb" ]; then
+    gdb ./bin/Sandbox
+    exit
+fi
+
+./bin/Sandbox

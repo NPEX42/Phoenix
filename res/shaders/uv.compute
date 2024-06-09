@@ -1,0 +1,33 @@
+#version 430 core
+
+layout (local_size_x = 1, local_size_y = 1, local_size_z = 1) in;
+layout(rgba32f, binding = 0) uniform image2D imgOutput;
+layout(rgba8, binding = 1) uniform image2D imageInput;
+
+uniform float uRadius;
+uniform vec2 uPosition;
+
+void main() {
+
+    vec2 uv = vec2(0, 0);
+
+    
+
+    ivec2 texelCoord = ivec2(gl_GlobalInvocationID.xy);
+    uv.x = float(texelCoord.x)/(gl_NumWorkGroups.x);
+    uv.y = float(texelCoord.y)/(gl_NumWorkGroups.y);
+
+    ivec2 texelCoordCenter = texelCoord - ivec2(uPosition);
+
+
+    vec4 pixel = imageLoad(imageInput, texelCoord);
+
+    pixel.a = 1.0;
+    if (length(texelCoordCenter) <= uRadius) { 
+    } else {
+        pixel = vec4(0);
+    }
+	
+    //imageStore(imgOutput, texelCoord, vec4(ndc, 0, 1));
+    imageStore(imgOutput, texelCoord, pixel);
+}

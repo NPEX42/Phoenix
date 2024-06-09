@@ -1,0 +1,1297 @@
+[{
+  "file": "/home/george/dev/Phoenix/Sandbox/main.c",
+  "directory": "/home/george/dev/Phoenix/Sandbox",
+  "command": "/usr/bin/gcc -c /home/george/dev/Phoenix/Sandbox/main.c -o /home/george/dev/Phoenix/Sandbox/main.c.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/neon.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/neon.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/neon.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/trigonometric.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/trigonometric.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/trigonometric.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/exponential.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/exponential.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/exponential.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/platform.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/platform.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/platform.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/vector_relational.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/vector_relational.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/vector_relational.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/quaternion.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/quaternion.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/quaternion.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/handed_coordinate_space.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/handed_coordinate_space.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/handed_coordinate_space.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/euler_angles.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/euler_angles.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/euler_angles.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/texture.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/texture.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/texture.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/rotate_vector.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/rotate_vector.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/rotate_vector.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/color_encoding.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/color_encoding.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/color_encoding.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/normal.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/normal.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/normal.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/intersect.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/intersect.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/intersect.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/dual_quaternion.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/dual_quaternion.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/dual_quaternion.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/number_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/number_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/number_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/vector_angle.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/vector_angle.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/vector_angle.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/integer.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/integer.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/integer.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/common.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/common.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/common.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/gradient_paint.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/gradient_paint.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/gradient_paint.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/extended_min_max.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/extended_min_max.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/extended_min_max.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/type_aligned.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/type_aligned.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/type_aligned.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/std_based_type.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/std_based_type.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/std_based_type.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/projection.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/projection.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/projection.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/transform2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/transform2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/transform2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/scalar_multiplication.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/scalar_multiplication.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/scalar_multiplication.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_operation.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_operation.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_operation.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/extend.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/extend.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/extend.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/integer.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/integer.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/integer.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/polar_coordinates.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/polar_coordinates.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/polar_coordinates.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_cross_product.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_cross_product.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_cross_product.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/fast_square_root.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/fast_square_root.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/fast_square_root.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/hash.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/hash.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/hash.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/bit.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/bit.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/bit.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/scalar_relational.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/scalar_relational.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/scalar_relational.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/log_base.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/log_base.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/log_base.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_transform_2d.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_transform_2d.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_transform_2d.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_interpolation.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_interpolation.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_interpolation.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/vector_query.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/vector_query.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/vector_query.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_query.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_query.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_query.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/exterior_product.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/exterior_product.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/exterior_product.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/type_trait.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/type_trait.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/type_trait.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/color_space.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/color_space.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/color_space.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/transform.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/transform.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/transform.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/associated_min_max.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/associated_min_max.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/associated_min_max.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/color_space_YCoCg.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/color_space_YCoCg.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/color_space_YCoCg.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/common.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/common.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/common.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/glm.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/glm.hpp -o /home/george/dev/Phoenix/vendor/include/glm/glm.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_double1_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double1_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double1_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_ulp.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_ulp.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_ulp.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/spline.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/spline.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/spline.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x3_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x3_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x3_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_double3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/Application2D.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/Application2D.cpp -o /home/george/dev/Phoenix/src/Application2D.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/quaternion.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/quaternion.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/quaternion.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/epsilon.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/epsilon.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/epsilon.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/random.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/random.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/random.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/imgui_tables.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/imgui_tables.cpp -o /home/george/dev/Phoenix/src/imgui_tables.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_geometric.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_geometric.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_geometric.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/vec1.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/vec1.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/vec1.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/type_aligned.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/type_aligned.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/type_aligned.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_float2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/bitfield.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/bitfield.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/bitfield.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat3x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat3x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat3x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/constants.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/constants.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/constants.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x2_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x2_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x2_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/noise.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/noise.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/noise.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/easing.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/easing.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/easing.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/compute_vector_relational.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/compute_vector_relational.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/compute_vector_relational.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_vec4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_vec4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_vec4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/_fixes.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/_fixes.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/_fixes.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_projection.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_projection.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_projection.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_float1_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float1_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float1_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_common.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_common.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_common.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_relational.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_relational.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_relational.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_transform.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_transform.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_transform.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_half.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_half.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_half.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/KHR/khrplatform.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/KHR/khrplatform.h -o /home/george/dev/Phoenix/include/KHR/khrplatform.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/scalar_integer.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_integer.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_integer.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_double2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/setup.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/setup.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/setup.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x2_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x2_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x2_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_int2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_vec2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_vec2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_vec2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/lua/lauxlib.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/lua/lauxlib.h -o /home/george/dev/Phoenix/vendor/include/lua/lauxlib.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/closest_point.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/closest_point.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/closest_point.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/integer.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/integer.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/integer.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_integer.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_integer.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_integer.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/reciprocal.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/reciprocal.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/reciprocal.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/fwd.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/fwd.hpp -o /home/george/dev/Phoenix/vendor/include/glm/fwd.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_double1.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double1.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double1.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/wrap.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/wrap.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/wrap.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/_features.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/_features.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/_features.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imstb_textedit.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imstb_textedit.h -o /home/george/dev/Phoenix/vendor/include/imstb_textedit.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x4_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x4_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x4_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/ulp.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/ulp.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/ulp.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x4_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x4_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x4_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x3_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x3_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x3_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/compatibility.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/compatibility.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/compatibility.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imstb_truetype.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imstb_truetype.h -o /home/george/dev/Phoenix/vendor/include/imstb_truetype.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/glm.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/glm.cpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/glm.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x4_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x4_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x4_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_int2_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int2_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int2_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/imgui_widgets.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/imgui_widgets.cpp -o /home/george/dev/Phoenix/src/imgui_widgets.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/lua/lualib.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/lua/lualib.h -o /home/george/dev/Phoenix/vendor/include/lua/lualib.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/stb/stb_image.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/stb/stb_image.h -o /home/george/dev/Phoenix/include/stb/stb_image.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_relational.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_relational.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_relational.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_float2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/Phoenix/Application2D.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/Phoenix/Application2D.hpp -o /home/george/dev/Phoenix/include/Phoenix/Application2D.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/common.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/common.hpp -o /home/george/dev/Phoenix/vendor/include/glm/common.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/norm.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/norm.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/norm.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/compute_common.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/compute_common.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/compute_common.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imgui_internal.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imgui_internal.h -o /home/george/dev/Phoenix/vendor/include/imgui_internal.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imconfig.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imconfig.h -o /home/george/dev/Phoenix/vendor/include/imconfig.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/color_space.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/color_space.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/color_space.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat2x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat2x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat2x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_double4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_int4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/vec_swizzle.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/vec_swizzle.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/vec_swizzle.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imgui_impl_opengl3.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imgui_impl_opengl3.h -o /home/george/dev/Phoenix/vendor/include/imgui_impl_opengl3.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/gfx/Renderer2D.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/gfx/Renderer2D.cpp -o /home/george/dev/Phoenix/src/gfx/Renderer2D.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/geometric.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/geometric.hpp -o /home/george/dev/Phoenix/vendor/include/glm/geometric.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/lua/luaconf.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/lua/luaconf.h -o /home/george/dev/Phoenix/vendor/include/lua/luaconf.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/lua/lua.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/lua/lua.hpp -o /home/george/dev/Phoenix/vendor/include/lua/lua.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/_swizzle.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/_swizzle.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/_swizzle.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_int1.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int1.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int1.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x2_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x2_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x2_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/fast_trigonometry.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/fast_trigonometry.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/fast_trigonometry.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/GLFW/glfw3native.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/GLFW/glfw3native.h -o /home/george/dev/Phoenix/vendor/include/GLFW/glfw3native.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat2x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat2x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat2x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/Phoenix.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/Phoenix.hpp -o /home/george/dev/Phoenix/include/Phoenix.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/gfx/Texture.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/gfx/Texture.cpp -o /home/george/dev/Phoenix/src/gfx/Texture.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imgui_impl_opengl3_loader.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imgui_impl_opengl3_loader.h -o /home/george/dev/Phoenix/vendor/include/imgui_impl_opengl3_loader.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/gfx/ui.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/gfx/ui.cpp -o /home/george/dev/Phoenix/src/gfx/ui.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/gfx/Shader.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/gfx/Shader.cpp -o /home/george/dev/Phoenix/src/gfx/Shader.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat4x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat4x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat4x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/type_ptr.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/type_ptr.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/type_ptr.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x3_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x3_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x3_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_inverse.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_inverse.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_inverse.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/_noise.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/_noise.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/_noise.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_integer.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_integer.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_integer.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x2_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x2_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x2_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/glad.c",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/gcc -c /home/george/dev/Phoenix/src/glad.c -o /home/george/dev/Phoenix/src/glad.c.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/normalize_dot.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/normalize_dot.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/normalize_dot.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imgui_impl_glfw.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imgui_impl_glfw.h -o /home/george/dev/Phoenix/vendor/include/imgui_impl_glfw.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/round.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/round.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/round.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat3x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat3x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat3x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/matrix.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/matrix.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/matrix.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_float4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/perpendicular.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/perpendicular.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/perpendicular.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/imgui.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/imgui.cpp -o /home/george/dev/Phoenix/src/imgui.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x4_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x4_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x4_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_double_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_double_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_double_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/scalar_packing.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_packing.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_packing.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/vec4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/vec4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/vec4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/imgui_impl_opengl3.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/imgui_impl_opengl3.cpp -o /home/george/dev/Phoenix/src/imgui_impl_opengl3.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_int3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat3x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/_vectorize.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/_vectorize.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/_vectorize.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/imgui_impl_glfw.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/imgui_impl_glfw.cpp -o /home/george/dev/Phoenix/src/imgui_impl_glfw.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/glad/glad.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/glad/glad.h -o /home/george/dev/Phoenix/include/glad/glad.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/Phoenix/gfx/Texture.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/Phoenix/gfx/Texture.hpp -o /home/george/dev/Phoenix/include/Phoenix/gfx/Texture.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x3_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x3_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x3_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_double4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/Phoenix.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/Phoenix.cpp -o /home/george/dev/Phoenix/src/Phoenix.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/matrix.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/matrix.hpp -o /home/george/dev/Phoenix/vendor/include/glm/matrix.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_trigonometric.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_trigonometric.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_trigonometric.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_int3_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int3_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int3_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/Phoenix/gfx/Renderer2D.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/Phoenix/gfx/Renderer2D.hpp -o /home/george/dev/Phoenix/include/Phoenix/gfx/Renderer2D.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/packing.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/packing.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/packing.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/vec2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/vec2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/vec2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_float1.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float1.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float1.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x2_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x2_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x2_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_float_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_float_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_float_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/Phoenix/gfx/Shader.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/Phoenix/gfx/Shader.hpp -o /home/george/dev/Phoenix/include/Phoenix/gfx/Shader.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/GLFW/glfw3.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/GLFW/glfw3.h -o /home/george/dev/Phoenix/vendor/include/GLFW/glfw3.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/include/Phoenix/gfx/ui.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/include/Phoenix/gfx/ui.hpp -o /home/george/dev/Phoenix/include/Phoenix/gfx/ui.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x3_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x3_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int3x3_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_decompose.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_decompose.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_decompose.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat4x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat4x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat4x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/type_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/type_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/type_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/trigonometric.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/trigonometric.hpp -o /home/george/dev/Phoenix/vendor/include/glm/trigonometric.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/io.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/io.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/io.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/range.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/range.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/range.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat4x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat4x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat4x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint3_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint3_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint3_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat3x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat3x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat3x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_access.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_access.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/matrix_access.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imgui.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imgui.h -o /home/george/dev/Phoenix/vendor/include/imgui.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/mat2x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/mat2x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/mat2x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/packing.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/packing.hpp -o /home/george/dev/Phoenix/vendor/include/glm/packing.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/gfx/stb_image.c",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/gcc -c /home/george/dev/Phoenix/src/gfx/stb_image.c -o /home/george/dev/Phoenix/src/gfx/stb_image.c.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_exponential.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_exponential.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_exponential.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/lua/lua.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/lua/lua.h -o /home/george/dev/Phoenix/vendor/include/lua/lua.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/exponential.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/exponential.hpp -o /home/george/dev/Phoenix/vendor/include/glm/exponential.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/vec3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/vec3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/vec3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_quat.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_quat.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_quat.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint3x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/imgui_draw.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/imgui_draw.cpp -o /home/george/dev/Phoenix/src/imgui_draw.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/fast_exponential.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/fast_exponential.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/fast_exponential.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/_swizzle_func.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/_swizzle_func.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/_swizzle_func.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/vector_relational.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/vector_relational.hpp -o /home/george/dev/Phoenix/vendor/include/glm/vector_relational.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/rotate_normalized_axis.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/rotate_normalized_axis.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/rotate_normalized_axis.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtc/packing.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtc/packing.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtc/packing.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_int4_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int4_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int4_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/scalar_relational.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_relational.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_relational.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_vec1.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_vec1.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_vec1.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_transform.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_transform.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_transform.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_vec3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_vec3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_vec3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_float.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_float.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_float.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/scalar_ulp.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_ulp.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_ulp.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/qualifier.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/qualifier.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/qualifier.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool1_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool1_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool1_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_transform.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_transform.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_transform.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat2x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double2x3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint1.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint1.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint1.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint2_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint2_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint2_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/raw_data.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/raw_data.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/raw_data.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x4_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x4_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x4_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_int1_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int1_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_int1_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/scalar_int_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_int_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_int_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_double.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_double.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_double.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x4_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x4_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x4_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_float.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_float.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_float.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_double2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float2x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/scalar_common.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_common.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_common.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/scalar_constants.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_constants.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_constants.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double3x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_float4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/integer.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/integer.hpp -o /home/george/dev/Phoenix/vendor/include/glm/integer.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/detail/type_mat4x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool1.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool1.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool1.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint1_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint1_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint1_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/simd/geometric.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/simd/geometric.h -o /home/george/dev/Phoenix/vendor/include/glm/simd/geometric.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x4.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x4.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x4.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x3_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x3_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint4x3_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/imstb_rectpack.h",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/imstb_rectpack.h -o /home/george/dev/Phoenix/vendor/include/imstb_rectpack.h.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_float3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x4_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x4_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int2x4_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_clip_space.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_clip_space.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_clip_space.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/src/imgui_demo.cpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/src/imgui_demo.cpp -o /home/george/dev/Phoenix/src/imgui_demo.cpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_bool3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_common.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_common.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/quaternion_common.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_relational.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_relational.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_relational.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/optimum_pow.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/optimum_pow.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/optimum_pow.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_float3_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float3_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_float3_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_double4x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint4_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint4_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_uint4_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x2.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x2.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float3x2.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/orthonormalize.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/orthonormalize.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/orthonormalize.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_uint2x3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_packing.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_packing.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_packing.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/scalar_uint_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_uint_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/scalar_uint_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/component_wise.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/component_wise.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/component_wise.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x2_sized.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x2_sized.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_int4x2_sized.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x2_precision.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x2_precision.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_float4x2_precision.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_major_storage.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_major_storage.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_major_storage.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/functions.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/functions.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/functions.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/mixed_product.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/mixed_product.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/mixed_product.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/vector_double3.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double3.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/vector_double3.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/string_cast.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/string_cast.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/string_cast.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/ext/matrix_common.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_common.hpp -o /home/george/dev/Phoenix/vendor/include/glm/ext/matrix_common.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }, {
+  "file": "/home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_factorisation.hpp",
+  "directory": "/home/george/dev/Phoenix",
+  "command": "/usr/bin/g++ -c /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_factorisation.hpp -o /home/george/dev/Phoenix/vendor/include/glm/gtx/matrix_factorisation.hpp.o -target x86_64-linux-gnu -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -I. -I. -Ivendor/include -Iinclude  -O0  -gdwarf-2  -Wall  -Wno-deprecated"
+ }]

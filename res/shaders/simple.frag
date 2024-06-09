@@ -9,4 +9,7 @@ uniform sampler2D uAlbedo;
 
 void main() {
 	fragColor = vec4(vColor, 1.0) * texture(uAlbedo, vUV);
+	if (fragColor.a < 0.5) {
+		discard;
+	}
 }

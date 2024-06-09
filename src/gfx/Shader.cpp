@@ -1,9 +1,11 @@
+#include "Phoenix/Util.hpp"
 #include "glad/glad.h"
 #include <cstdint>
 #include <cstdio>
-#include <gfx/Shader.hpp>
+#include <Phoenix/gfx/Shader.hpp>
 
 #include <fstream>
+#include <memory>
 #include <sstream>
 #include <string>
 #include <strstream>
@@ -16,7 +18,7 @@ void Shader::Unbind() { glUseProgram(0); }
 
 uint32_t Shader::GetUniformLocation(std::string name) {
     if (mUniforms.find(name) == mUniforms.end()) {
-        uint32_t loc = 0;
+        int loc = 0;
         loc = glGetUniformLocation(mID, name.c_str());
         if (loc == -1)
             printf("Failed To Locate Uniform %s\n", name.c_str());
@@ -85,6 +87,7 @@ Shader::Shader(std::string vsSource, std::string fsSource) : mID(0) {
 
 void Shader::SetInt(std::string name, int value) { glUniform1i(GetUniformLocation(name), value); }
 
+// TODO(George): Replace Raw string loading with util's LoadString Function.
 Shader *Shader::Load(std::string vsPath, std::string fsPath) {
     std::ifstream vs_file(vsPath);
     std::stringstream buffer;
@@ -99,6 +102,74 @@ Shader *Shader::Load(std::string vsPath, std::string fsPath) {
     std::string fsSrc = fs_buffer.str();
 
     return new Shader(vsSrc, fsSrc);
+}
+
+
+// Compute Shaders =================================================================
+
+ComputeShader::ComputeShader(std::string src) {
+    uint32_t vs;
+    vs = glCreateShader(GL_COMPUTE_SHADER);
+
+    const char *vsSource_cstr = src.c_str();
+
+    glShaderSource(vs, 1, &vsSource_cstr, NULL);
+
+    glCompileShader(vs);
+
+    GLint vertex_compiled;
+    glGetShaderiv(vs, GL_COMPILE_STATUS, &vertex_compiled);
+    if (vertex_compiled != GL_TRUE) {
+        GLsizei log_length = 0;
+        GLchar message[1024];
+        glGetShaderInfoLog(vs, 1024, &log_length, message);
+        printf("Compute Shader Compilation Failed:\n%s\n == SOURCE ==\n%s\n", message, vsSource_cstr);
+
+        return;
+    }
+
+
+    mID = glCreateProgram();
+
+    glAttachShader(mID, vs);
+
+    glLinkProgram(mID);
+
+    GLint program_linked;
+    glGetProgramiv(mID, GL_LINK_STATUS, &program_linked);
+    if (program_linked != GL_TRUE) {
+        GLsizei log_length = 0;
+        GLchar message[1024];
+        glGetProgramInfoLog(mID, 1024, &log_length, message);
+        printf("Program Linking Failed:\n%s\n", message);
+        return;
+    }
+}
+
+std::shared_ptr<ComputeShader> ComputeShader::Load(std::string filepath) {
+    auto source = phnx::ReadTextFile(filepath);
+    return std::make_shared<ComputeShader>(source);
+}
+
+void ComputeShader::Dispatch(int x, int y, int z) {
+    glUseProgram(mID);
+    glDispatchCompute(x, y, z);
+}
+
+void ComputeShader::DispatchSync(int x, int y, int z) {
+    Dispatch(x, y, z);
+    glMemoryBarrier(GL_ALL_BARRIER_BITS);
+}
+
+void ComputeShader::SetInt(std::string name, int value) {
+    glUniform1i(glGetUniformLocation(mID, name.c_str()), value);
+}
+
+void ComputeShader::SetFloat(std::string name, float value) {
+    glUniform1f(glGetUniformLocation(mID, name.c_str()), value);
+}
+void ComputeShader::SetFloat2(std::string name, float x, float y) {
+    glUniform2f(glGetUniformLocation(mID, name.c_str()), x, y);
 }
 
 } // namespace gfx

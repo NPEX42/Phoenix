@@ -1,0 +1,198 @@
+#include "Phoenix/Application2D.hpp"
+#include "Phoenix/AssetManager.hpp"
+#include "Phoenix/Log.hpp"
+#include "Phoenix/Util.hpp"
+#include "Phoenix/gfx/Renderer2D.hpp"
+#include <Phoenix/gfx/ui.hpp>
+#include "Phoenix/gfx/Shader.hpp"
+#include "Phoenix/gfx/Texture.hpp"
+#include "glad/glad.h"
+#include "glm/ext/vector_float2.hpp"
+#include "imgui.h"
+#include "nfd.h"
+#include "yaml-cpp/node/node.h"
+#include <Phoenix.hpp>
+#include <algorithm>
+#include <cstddef>
+#include <cstring>
+#include <memory>
+#include <string>
+
+#include <nfd.hpp>
+
+class Sandbox : public phnx::Application2D {
+
+    bool mShowDemoWindow = false;
+    std::shared_ptr<phnx::gfx::Framebuffer> mFB;
+
+    std::shared_ptr<phnx::gfx::Texture2D> mSnom, mComputeOutput;
+
+    float mScale = 1.0f, mViewportScale = 1.0f;
+    glm::vec2 pos;
+
+    phnx::gfx::Shader* mShader = nullptr;
+
+    YAML::Node mConfig;
+
+    std::string mActiveTextureName;
+    char nameBuffer[128];
+
+    std::shared_ptr<phnx::gfx::ComputeShader> mCompute;
+
+    bool OnCreate() override {
+
+        NFD::Init();
+
+        mConfig = phnx::LoadYAML("res/config.yaml");
+        mFB = phnx::gfx::CreateFramebuffer(mConfig["Viewport"]["Width"].as<int>(), mConfig["Viewport"]["Height"].as<int>(), 2);
+        
+        mShader = phnx::gfx::Shader::Load("res/shaders/simple.vs", "res/shaders/simple.frag");
+        phnx::gfx::SetFrameSize(mFB->Width, mFB->Height);
+        mShader->SetInt("uAlbedo", 0);
+
+        phnx::AssetManager::LoadTexturesFromTOML("res/textures.toml");
+        mSnom = phnx::AssetManager::GetTextureByName("Snom");
+
+        phnx::gfx::SetAlbedo(mSnom);
+
+        mActiveTextureName = "Snom";
+
+        mCompute = phnx::gfx::ComputeShader::Load("res/shaders/uv.compute");
+
+        mComputeOutput = phnx::gfx::CreateTexture2D(mFB->Width, mFB->Height, nullptr, GL_RGBA32F);
+
+        mComputeOutput->BindImage(0);
+        mCompute->SetInt("imgOutput", 0);
+        mCompute->SetInt("imageInput", 1);
+        mCompute->SetFloat("uRadius", mScale);
+
+
+        glBindImageTexture(1, mFB->ColorBuffer[0], 0, GL_FALSE, 0, GL_READ_WRITE, GL_RGBA8);
+
+        mCompute->DispatchSync(mFB->Width,mFB->Height);
+
+        
+
+        
+
+        return true;
+    }
+
+    bool OnUpdate() override {
+        return true;
+    }
+
+    void OnRender() override {
+        mFB->Bind();
+        mShader->Bind();
+        phnx::gfx::SetAlbedo(mSnom);
+        phnx::gfx::Clear(0.0f, 0.2f, 0.3f, 1.0f);
+        phnx::gfx::Quad({mFB->Width / 2, mFB->Height / 2}, {100, 100 * mSnom->Aspect()}, {1, 1, 1});
+        phnx::gfx::Flush();
+        mFB->Unbind();
+
+        mCompute->DispatchSync(mFB->Width, mFB->Height);
+    }
+
+    void OnDestroy() override {
+        ImGui::SaveIniSettingsToDisk("imgui.ini");
+        phnx::SaveYAML("res/config.yaml", mConfig);
+    }
+
+    void OnImGui() override {
+        phnx::ui::Dockspace();
+        ImGui::Begin("Properties", NULL, ImGuiWindowFlags_MenuBar);
+        if (ImGui::BeginMenuBar()) {
+            if (ImGui::BeginMenu("Debug")) {
+                if (ImGui::MenuItem("Demo Window")) {
+                    mShowDemoWindow = true;
+                }
+
+                if (ImGui::MenuItem("Reload Config")) {
+                    mConfig = phnx::LoadYAML("res/config.yaml");
+                    mFB->Resize(mConfig["Viewport"]["Width"].as<int>(), mConfig["Viewport"]["Height"].as<int>());
+                    phnx::gfx::SetFrameSize(mFB->Width, mFB->Height);
+                    phnx::AssetManager::ReloadTexturesFromTOML("res/textures.toml");
+                    mSnom = phnx::AssetManager::GetTextureByName(mActiveTextureName);
+                }
+
+                ImGui::EndMenu();
+            }
+            ImGui::EndMenuBar();
+        }
+
+        if (ImGui::SliderFloat("Scale", &mScale, 0, 200)) {
+            mCompute->SetFloat("uRadius", mScale);
+        }
+        ImGui::SliderFloat("Viewport Scale", &mViewportScale, 0.01f, 2.0f);
+        if (ImGui::SliderFloat2("Snom Position", &pos.x, 0, 1000)) {
+            mCompute->SetFloat2("uPosition", pos.x, pos.y);
+        }
+        ImGui::Text("Viewport Size: %dx%d", phnx::gfx::FrameWidth(), phnx::gfx::FrameHeight());
+
+        ImGui::End();
+
+        ImGui::Begin("Viewport");
+        
+        ImVec2 size = ImGui::GetContentRegionAvail();
+        ImGui::Image(
+            (ImTextureID) mComputeOutput->ID(), 
+            {mFB->Width * mViewportScale, mFB->Height * mViewportScale},
+            {0, 1}, {1, 0}
+            );
+        ImGui::End();
+
+
+        ImGui::Begin("Texture Manager");
+        if (ImGui::BeginCombo("Current Texture", mActiveTextureName.c_str())) {
+            for (const auto& texture : phnx::AssetManager::Textures()) {
+                if (ImGui::Selectable(texture.first.c_str(), mActiveTextureName == texture.first)) {
+                    mActiveTextureName = texture.first;
+                    phnx::gfx::SetAlbedo(phnx::AssetManager::GetTextureByName(mActiveTextureName));
+
+                    strcpy(nameBuffer, mActiveTextureName.c_str());
+                }
+            }
+            ImGui::EndCombo();
+        }
+        
+        (ImGui::InputText("Name", nameBuffer, 128));
+
+        if (ImGui::ImageButton("##TextureSelection", (ImTextureID) mSnom->ID(), {128, 128})) {
+            nfdchar_t* path;
+            nfdresult_t result = NFD_OpenDialog(&path, nullptr, 0, nullptr);
+            if (result == NFD_OKAY) {
+                PHNX_INFO("Path: %s", path);
+            }
+        }
+
+        if (ImGui::Button("Update") && strlen(nameBuffer) > 0) {
+            mActiveTextureName = nameBuffer;
+            phnx::AssetManager::SetTextureByName(nameBuffer, mSnom);
+        }
+        
+        ImGui::End();
+
+        if (mShowDemoWindow) {
+            ImGui::ShowDemoWindow(&mShowDemoWindow);
+        }
+    }
+
+    phnx::WindowSpec WindowSpecs() override {
+        return phnx::WindowSpec {
+            .Width = 1080,
+            .Height = 720,
+            .Title = "Sandbox",
+            .Vsync = true,
+        };
+    }
+
+
+};
+
+
+
+phnx::Application2D* CreateApp() {
+    return new Sandbox();
+    
+}
