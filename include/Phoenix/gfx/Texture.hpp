@@ -10,7 +10,7 @@ namespace phnx {
 namespace gfx {
 class Texture2D {
 public:
-    Texture2D(int width, int height, uint8_t *pixels, uint format = GL_RGBA);
+    Texture2D(int width, int height, uint8_t *pixels, uint format = GL_RGBA, std::string filepath = "");
     void Bind();
     void Unbind();
 
@@ -31,9 +31,12 @@ public:
 
     void SetFilterModes(int min, int max);
 
+    const std::string& Filepath() const {return mFilepath;}
+
 private:
     uint32_t mID, mFormat;
     float mWidth, mHeight;
+    std::string mFilepath;
 };
 
 std::shared_ptr<Texture2D> LoadTexture2D(std::string filepath, bool flip = false);

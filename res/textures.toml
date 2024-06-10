@@ -3,3 +3,4 @@ ResourceDir = "res/textures"
 [Textures]
 Snoms = "SnomsPerSecond.png"
 Snom = "snom.png"
+Tiles = "tilemap_packed.png"

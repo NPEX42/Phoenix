@@ -25,7 +25,7 @@ INCLUDES += -Ivendor/include -Iinclude
 FORCE_INCLUDE +=
 ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
 ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-LIBS += -lglfw3 -llua -lyaml-cpp -lnfd -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
+LIBS += -lglfw3 -llua -lyaml-cpp -lnfd -lfmt -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
 LDDEPS +=
 LINKCMD = $(AR) -rcs "$@" $(OBJECTS)
 define PREBUILDCMDS
@@ -39,14 +39,14 @@ ifeq ($(config),debug)
 OBJDIR = obj/Debug/Phoenix
 DEFINES += -DPNHX_LINUX -DPLATFORM_LINUX
 ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g
-ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g
+ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g -std=c++20
 ALL_LDFLAGS += $(LDFLAGS) -Lvendor/lib -L/usr/lib64 -m64
 
 else ifeq ($(config),release)
 OBJDIR = obj/Release/Phoenix
 DEFINES += -DPNHX_LINUX -DPLATFORM_LINUX -DNDEBUG
 ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O2
-ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O2
+ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O2 -std=c++20
 ALL_LDFLAGS += $(LDFLAGS) -Lvendor/lib -L/usr/lib64 -m64 -s
 
 endif
@@ -68,6 +68,7 @@ GENERATED += $(OBJDIR)/Phoenix.o
 GENERATED += $(OBJDIR)/Renderer2D.o
 GENERATED += $(OBJDIR)/Shader.o
 GENERATED += $(OBJDIR)/Texture.o
+GENERATED += $(OBJDIR)/TextureAtlas.o
 GENERATED += $(OBJDIR)/Toml.o
 GENERATED += $(OBJDIR)/Util.o
 GENERATED += $(OBJDIR)/glad.o
@@ -87,6 +88,7 @@ OBJECTS += $(OBJDIR)/Phoenix.o
 OBJECTS += $(OBJDIR)/Renderer2D.o
 OBJECTS += $(OBJDIR)/Shader.o
 OBJECTS += $(OBJDIR)/Texture.o
+OBJECTS += $(OBJDIR)/TextureAtlas.o
 OBJECTS += $(OBJDIR)/Toml.o
 OBJECTS += $(OBJDIR)/Util.o
 OBJECTS += $(OBJDIR)/glad.o
@@ -208,6 +210,9 @@ $(OBJDIR)/Shader.o: src/gfx/Shader.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Texture.o: src/gfx/Texture.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/TextureAtlas.o: src/gfx/TextureAtlas.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/stb_image.o: src/gfx/stb_image.c

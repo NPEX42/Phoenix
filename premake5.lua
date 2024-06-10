@@ -6,6 +6,7 @@ objdir("obj/")
 
 project("Phoenix")
 language("C++")
+cppdialect("C++20")
 kind("StaticLib")
 
 files({
@@ -28,6 +29,7 @@ links({
 	"lua",
 	"yaml-cpp",
 	"nfd",
+	"fmt",
 })
 
 filter("system:linux")
@@ -70,6 +72,7 @@ symbols "Off"
 
 project("Sandbox")
 language("C++")
+cppdialect("C++20")
 kind("ConsoleApp")
 
 files({
@@ -92,6 +95,7 @@ links({
 	"lua",
 	"yaml-cpp",
 	"nfd",
+	"fmt",
 	"Phoenix",
 })
 -- -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 

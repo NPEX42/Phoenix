@@ -2,7 +2,8 @@
 #include "Phoenix/Util.hpp"
 #include "Phoenix/gfx/Shader.hpp"
 #include "Phoenix/gfx/Texture.hpp"
-#include "Toml/Toml.hpp"
+#include "toml.hpp"
+#include "toml/parser.hpp"
 #include "yaml-cpp/node/node.h"
 #include <Phoenix/AssetManager.hpp>
 #include <cstdint>
@@ -56,13 +57,13 @@ namespace AssetManager {
     }
 
     void LoadTexturesFromTOML(std::string filepath) {
-        toml::table assets = toml::parse_file(filepath);
-        toml::table textures = *assets["Textures"].as_table();
-        std::string resourceDir = *assets["ResourceDir"].value<std::string>();
+        toml::value assets = toml::parse(filepath);
+        toml::value textures = assets["Textures"];
+        std::string resourceDir = assets["ResourceDir"].as_string();
 
-        for (const auto& texture: textures) {
-            std::string_view name = texture.first.str();
-            std::string filename = *texture.second.value<std::string>();
+        for (const auto& texture : textures.as_table()) {
+            std::string_view name = texture.first;
+            std::string filename = texture.second.as_string();
 
             LoadTexture2D(std::string(name), resourceDir + "/" + filename, true);
         }

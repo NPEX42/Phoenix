@@ -56,7 +56,7 @@ void SetFrameSize(float w, float h) {
     Height = h;
 }
 
-void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color) {
+void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color,const glm::vec2& uv0, const glm::vec2& uv1) {
     Vertex2D tl, tr, bl, br;
 
     tr.mPosition.x = ctr.x + size.x / 2.0f;
@@ -71,10 +71,10 @@ void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color) {
     bl.mPosition.x = ctr.x - size.x / 2.0f;
     bl.mPosition.y = ctr.y - size.y / 2.0f;
 
-    tr.mUV = {1.0, 1.0};
-    tl.mUV = {0.0, 1.0};
-    br.mUV = {1.0, 0.0};
-    bl.mUV = {0.0, 0.0};
+    tr.mUV = uv1;
+    tl.mUV = {uv0.x, uv1.y};
+    br.mUV = {uv1.x, uv0.y};
+    bl.mUV = uv0;
 
     tr.mColor = color;
     tl.mColor = color;
@@ -203,6 +203,17 @@ int FrameWidth() {
 int FrameHeight() {
     return Height;
 }
+
+
+void TextureRect(std::shared_ptr<Texture2D> texture, const glm::vec2 &ctr, const Rect& rect, const glm::vec2 &size, const glm::vec3 &color) {
+    SetAlbedo(texture);
+    glm::vec2 p0 = {rect.X, rect.Y};
+    glm::vec2 p1 = {rect.X + rect.Width, rect.Y + rect.Height};
+
+
+    Quad(ctr, size, color, p0 / texture->Size(), p1 / texture->Size());
+}
+
 
 } // namespace gfx
 } // namespace phnx

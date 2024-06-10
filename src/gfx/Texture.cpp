@@ -20,10 +20,10 @@ std::shared_ptr<Texture2D> LoadTexture2D(std::string filepath, bool flip) {
         return nullptr;
     }
 
-    return std::make_shared<Texture2D>(w, h, pixels);
+    return std::make_shared<Texture2D>(w, h, pixels, GL_RGBA, filepath);
 }
 
-Texture2D::Texture2D(int width, int height, uint8_t *pixels, uint format) {
+Texture2D::Texture2D(int width, int height, uint8_t *pixels, uint format, std::string filepath) {
     glCreateTextures(GL_TEXTURE_2D, 1, &mID);
     glBindTexture(GL_TEXTURE_2D, mID);
 
@@ -40,6 +40,7 @@ Texture2D::Texture2D(int width, int height, uint8_t *pixels, uint format) {
     mWidth = width;
     mHeight = height;
     mFormat = format;
+    mFilepath = filepath;
 }
 
 void Texture2D::SetUnit(int unit) {

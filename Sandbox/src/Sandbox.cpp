@@ -6,6 +6,8 @@
 #include <Phoenix/gfx/ui.hpp>
 #include "Phoenix/gfx/Shader.hpp"
 #include "Phoenix/gfx/Texture.hpp"
+#include "Phoenix/gfx/TextureAtlas.hpp"
+#include "fmt/core.h"
 #include "glad/glad.h"
 #include "glm/ext/vector_float2.hpp"
 #include "imgui.h"
@@ -19,6 +21,7 @@
 #include <string>
 
 #include <nfd.hpp>
+#include <string_view>
 
 class Sandbox : public phnx::Application2D {
 
@@ -38,6 +41,9 @@ class Sandbox : public phnx::Application2D {
     char nameBuffer[128];
 
     std::shared_ptr<phnx::gfx::ComputeShader> mCompute;
+
+    std::shared_ptr<phnx::gfx::TextureAtlas> mAtlas;
+    std::string mTileID;
 
     bool OnCreate() override {
 
@@ -71,8 +77,10 @@ class Sandbox : public phnx::Application2D {
 
         mCompute->DispatchSync(mFB->Width,mFB->Height);
 
-        
+        mAtlas = std::make_shared<phnx::gfx::TextureAtlas>(phnx::AssetManager::GetTextureByName("Tiles"));
+        mAtlas->GenerateTiles(16, 16);
 
+        mAtlas->Texture()->SetFilterModes(GL_NEAREST, GL_NEAREST);
         
 
         return true;
@@ -88,6 +96,8 @@ class Sandbox : public phnx::Application2D {
         phnx::gfx::SetAlbedo(mSnom);
         phnx::gfx::Clear(0.0f, 0.2f, 0.3f, 1.0f);
         phnx::gfx::Quad({mFB->Width / 2, mFB->Height / 2}, {100, 100 * mSnom->Aspect()}, {1, 1, 1});
+        phnx::gfx::TextureRect(mAtlas->Texture(), {128, 128}, mAtlas->GetTileRect(mTileID), {256, 256});
+
         phnx::gfx::Flush();
         mFB->Unbind();
 
@@ -97,6 +107,8 @@ class Sandbox : public phnx::Application2D {
     void OnDestroy() override {
         ImGui::SaveIniSettingsToDisk("imgui.ini");
         phnx::SaveYAML("res/config.yaml", mConfig);
+
+        mAtlas->ExportTOML("res/tiles.toml");
     }
 
     void OnImGui() override {
@@ -136,7 +148,7 @@ class Sandbox : public phnx::Application2D {
         
         ImVec2 size = ImGui::GetContentRegionAvail();
         ImGui::Image(
-            (ImTextureID) mComputeOutput->ID(), 
+            (ImTextureID) mFB->ColorBuffer[0], 
             {mFB->Width * mViewportScale, mFB->Height * mViewportScale},
             {0, 1}, {1, 0}
             );
@@ -163,14 +175,37 @@ class Sandbox : public phnx::Application2D {
             nfdresult_t result = NFD_OpenDialog(&path, nullptr, 0, nullptr);
             if (result == NFD_OKAY) {
                 PHNX_INFO("Path: %s", path);
+                phnx::AssetManager::LoadTexture2D(mActiveTextureName, path);
             }
         }
+
+    
 
         if (ImGui::Button("Update") && strlen(nameBuffer) > 0) {
             mActiveTextureName = nameBuffer;
             phnx::AssetManager::SetTextureByName(nameBuffer, mSnom);
         }
         
+        if (ImGui::BeginChild("Tilemap", {20 * 16 + 24, 8 * 16 + 24}, ImGuiChildFlags_Border | ImGuiChildFlags_ResizeX | ImGuiChildFlags_ResizeY)) {
+
+        for (int y = 0; y < mAtlas->Rows(); y++) {
+            for (int x = 0; x < mAtlas->Columns(); x++) {
+                phnx::gfx::RectUVs uvs = mAtlas->GetTileRectUV(fmt::format("tile_{}_{}", x, y));
+
+                ImGui::Image((ImTextureID) mAtlas->Texture()->ID(), {32, 32},
+                    {uvs.UV0.x, uvs.UV0.y}, {uvs.UV1.x, uvs.UV1.y}
+                );
+
+                if (ImGui::IsItemClicked(ImGuiMouseButton_Left)) {
+                    mTileID = fmt::format("tile_{}_{}", x, y);
+                }
+
+                ImGui::SameLine(0, 3);
+            }
+             ImGui::NewLine();
+        }
+        ImGui::EndChildFrame();
+        }
         ImGui::End();
 
         if (mShowDemoWindow) {
