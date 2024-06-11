@@ -25,7 +25,7 @@ INCLUDES += -Ivendor/include -Iinclude
 FORCE_INCLUDE +=
 ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
 ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-LIBS += -lglfw3 -llua -lyaml-cpp -lnfd -lfmt -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
+LIBS += -lglfw3 -llua -lyaml-cpp -lnfd -lvulkan -lfmt -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
 LDDEPS +=
 LINKCMD = $(AR) -rcs "$@" $(OBJECTS)
 define PREBUILDCMDS
@@ -71,6 +71,7 @@ GENERATED += $(OBJDIR)/Texture.o
 GENERATED += $(OBJDIR)/TextureAtlas.o
 GENERATED += $(OBJDIR)/Toml.o
 GENERATED += $(OBJDIR)/Util.o
+GENERATED += $(OBJDIR)/Vulkan.o
 GENERATED += $(OBJDIR)/glad.o
 GENERATED += $(OBJDIR)/imgui.o
 GENERATED += $(OBJDIR)/imgui_demo.o
@@ -91,6 +92,7 @@ OBJECTS += $(OBJDIR)/Texture.o
 OBJECTS += $(OBJDIR)/TextureAtlas.o
 OBJECTS += $(OBJDIR)/Toml.o
 OBJECTS += $(OBJDIR)/Util.o
+OBJECTS += $(OBJDIR)/Vulkan.o
 OBJECTS += $(OBJDIR)/glad.o
 OBJECTS += $(OBJDIR)/imgui.o
 OBJECTS += $(OBJDIR)/imgui_demo.o
@@ -219,6 +221,9 @@ $(OBJDIR)/stb_image.o: src/gfx/stb_image.c
 	@echo "$(notdir $<)"
 	$(SILENT) $(CC) $(ALL_CFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/ui.o: src/gfx/ui.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Vulkan.o: src/gfx/vk/Vulkan.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/glad.o: src/glad.c

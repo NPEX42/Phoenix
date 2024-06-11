@@ -1,4 +1,5 @@
 #pragma once
+#include "Phoenix/gfx/vk/Vulkan.hpp"
 #include "glm/ext/vector_int2.hpp"
 #include <Phoenix.hpp>
 #include <string>
@@ -23,5 +24,6 @@ namespace phnx {
         void Start();
     private:
         Window* mWindow;
+        VK::Context* mContext;
     }; 
 }

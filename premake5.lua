@@ -29,6 +29,7 @@ links({
 	"lua",
 	"yaml-cpp",
 	"nfd",
+	"vulkan",
 	"fmt",
 })
 
@@ -96,6 +97,7 @@ links({
 	"yaml-cpp",
 	"nfd",
 	"fmt",
+	"vulkan",
 	"Phoenix",
 })
 -- -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 

@@ -42,7 +42,11 @@ void InitOpenGL(Window &w) {
     phnx::gfx::Init();
 }
 
-Window::Window(int width, int height, std::string title) : mWindow(nullptr) {
+Window::Window(int width, int height, std::string title, Renderer renderer) : mWindow(nullptr) {
+    if (renderer == Vulkan) {
+        glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+        glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+    }
     mWindow = glfwCreateWindow(width, height, title.c_str(), nullptr, nullptr);
 }
 

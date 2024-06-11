@@ -8,7 +8,7 @@ namespace ui {
 void Init(GLFWwindow *window) {
     ImGui::CreateContext();
     ImGui_ImplGlfw_InitForOpenGL(window, true);
-    ImGui_ImplOpenGL3_Init("#version 410 core");
+    //ImGui_ImplOpenGL3_Init("#version 410 core");
 
     ImGuiIO& io = ImGui::GetIO();
     io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;

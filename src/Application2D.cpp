@@ -1,4 +1,6 @@
 #include "GLFW/glfw3.h"
+#include "Phoenix.hpp"
+#include "Phoenix/gfx/vk/Vulkan.hpp"
 #include <Phoenix/Application2D.hpp>
 #include <Phoenix/gfx/ui.hpp>
 
@@ -9,13 +11,15 @@ namespace phnx {
 
         WindowSpec spec = WindowSpecs();
 
-        mWindow = new Window(spec.Width, spec.Height, spec.Title);
+        mWindow = new Window(spec.Width, spec.Height, spec.Title, Vulkan);
+        
+        mContext = new VK::Context(spec.Title);
 
-        glfwSwapInterval(spec.Vsync ? 1 : 0);
+        //glfwSwapInterval(spec.Vsync ? 1 : 0);
 
-        InitOpenGL(*mWindow);
+        //InitOpenGL(*mWindow);
 
-        ui::Init((GLFWwindow *)mWindow->Handle());
+        //ui::Init((GLFWwindow *)mWindow->Handle());
 
         if (!OnCreate()) {
             return;
@@ -24,16 +28,16 @@ namespace phnx {
         
         
         while (mWindow->IsOpen()) {
-            PollEvents();
-            if (!OnUpdate()) {
-                break;
-            }
-            OnRender();
-            ui::BeginFrame();
-            OnImGui();
-            ui::EndFrame();
+            //PollEvents();
+            //if (!OnUpdate()) {
+              //  break;
+            //}
+            //OnRender();
+            // ui::BeginFrame();
+            // OnImGui();
+            // ui::EndFrame();
             
-            mWindow->SwapBuffers();
+            // mWindow->SwapBuffers();
         }
         
         OnDestroy();
