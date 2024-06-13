@@ -61,6 +61,7 @@ filter("system:linux")
 defines({ "PLATFORM_LINUX" })
 
 filter("configurations:Debug")
+defines({"DEBUG"})
 optimize("Off")
 symbols "On"
 

@@ -37,7 +37,7 @@ endef
 
 ifeq ($(config),debug)
 OBJDIR = obj/Debug/Phoenix
-DEFINES += -DPNHX_LINUX -DPLATFORM_LINUX
+DEFINES += -DPNHX_LINUX -DPLATFORM_LINUX -DDEBUG
 ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g
 ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g -std=c++20
 ALL_LDFLAGS += $(LDFLAGS) -Lvendor/lib -L/usr/lib64 -m64
@@ -63,7 +63,9 @@ OBJECTS :=
 
 GENERATED += $(OBJDIR)/Application2D.o
 GENERATED += $(OBJDIR)/AssetManager.o
+GENERATED += $(OBJDIR)/Buffer.o
 GENERATED += $(OBJDIR)/Log.o
+GENERATED += $(OBJDIR)/OGL.o
 GENERATED += $(OBJDIR)/Phoenix.o
 GENERATED += $(OBJDIR)/Renderer2D.o
 GENERATED += $(OBJDIR)/Shader.o
@@ -83,7 +85,9 @@ GENERATED += $(OBJDIR)/stb_image.o
 GENERATED += $(OBJDIR)/ui.o
 OBJECTS += $(OBJDIR)/Application2D.o
 OBJECTS += $(OBJDIR)/AssetManager.o
+OBJECTS += $(OBJDIR)/Buffer.o
 OBJECTS += $(OBJDIR)/Log.o
+OBJECTS += $(OBJDIR)/OGL.o
 OBJECTS += $(OBJDIR)/Phoenix.o
 OBJECTS += $(OBJDIR)/Renderer2D.o
 OBJECTS += $(OBJDIR)/Shader.o
@@ -213,6 +217,12 @@ $(OBJDIR)/Texture.o: src/gfx/Texture.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/TextureAtlas.o: src/gfx/TextureAtlas.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Buffer.o: src/gfx/ogl/Buffer.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/OGL.o: src/gfx/ogl/OGL.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/stb_image.o: src/gfx/stb_image.c

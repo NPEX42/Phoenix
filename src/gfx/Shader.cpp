@@ -8,7 +8,9 @@
 #include <memory>
 #include <sstream>
 #include <string>
-#include <strstream>
+
+
+#include <Phoenix/gfx/ogl/OGL.hpp>
 
 namespace phnx {
 namespace gfx {
@@ -153,12 +155,12 @@ std::shared_ptr<ComputeShader> ComputeShader::Load(std::string filepath) {
 
 void ComputeShader::Dispatch(int x, int y, int z) {
     glUseProgram(mID);
-    glDispatchCompute(x, y, z);
+    GL_CHECK(glDispatchCompute(x, y, z));
 }
 
 void ComputeShader::DispatchSync(int x, int y, int z) {
     Dispatch(x, y, z);
-    glMemoryBarrier(GL_ALL_BARRIER_BITS);
+    GL_CHECK(glMemoryBarrier(GL_ALL_BARRIER_BITS));
 }
 
 void ComputeShader::SetInt(std::string name, int value) {
@@ -169,7 +171,7 @@ void ComputeShader::SetFloat(std::string name, float value) {
     glUniform1f(glGetUniformLocation(mID, name.c_str()), value);
 }
 void ComputeShader::SetFloat2(std::string name, float x, float y) {
-    glUniform2f(glGetUniformLocation(mID, name.c_str()), x, y);
+    GL_CHECK(glUniform2f(glGetUniformLocation(mID, name.c_str()), x, y));
 }
 
 } // namespace gfx

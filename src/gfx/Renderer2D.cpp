@@ -1,4 +1,6 @@
+#include "Phoenix/gfx/Api.hpp"
 #include "Phoenix/gfx/Texture.hpp"
+#include "Phoenix/gfx/ogl/Buffer.hpp"
 #include "glm/ext/matrix_float4x4.hpp"
 #include "glm/ext/matrix_transform.hpp"
 #include "glm/ext/vector_float2.hpp"
@@ -9,6 +11,8 @@
 #include <cstdint>
 #include <Phoenix/gfx/Renderer2D.hpp>
 #include <glad/glad.h>
+
+#include <Phoenix/gfx/ogl/OGL.hpp>
 
 #include <glm/gtc/matrix_transform.hpp>
 
@@ -42,6 +46,8 @@ static glm::mat4x4 proj;
 static float Width = 1, Height = 1;
 
 static int batches;
+
+static std::unique_ptr<GL::Buffer> sVBO;
 
 void Clear(float r, float g, float b, float a) {
     glClearColor(r, g, b, a);
@@ -91,28 +97,21 @@ void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color,co
 void Init() {
 
     proj = glm::identity<glm::mat4x4>();
-
+    sVBO = std::make_unique<GL::Buffer>(phnx::gfx::BufferType::VERTEX);
     glGenVertexArrays(1, &vaoID);
-    glGenBuffers(1, &vboID);
 
     glBindVertexArray(vaoID);
-    glBindBuffer(GL_ARRAY_BUFFER, vboID);
-
-    glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex2D) * MAX_VERTS, nullptr, GL_STREAM_DRAW);
+    sVBO->Bind();
+    sVBO->SetData<Vertex2D>(nullptr, MAX_VERTS);
 
     uint32_t stride = sizeof(Vertex2D);
 
-    glVertexAttribPointer(POSITION_INDEX, 2, GL_FLOAT, GL_FALSE, stride, (void *)offsetof(Vertex2D, mPosition));
+    sVBO->SetLayout(POSITION_INDEX, DataType::F32, 3, stride, offsetof(Vertex2D, mPosition));
+    
+    sVBO->SetLayout(COLOR_INDEX, DataType::F32, 3, stride, offsetof(Vertex2D, mColor));
+    sVBO->SetLayout(TEXCOORD_INDEX, DataType::F32, 3, stride, offsetof(Vertex2D, mUV));
 
-    glVertexAttribPointer(COLOR_INDEX, 3, GL_FLOAT, GL_FALSE, stride, (void *)offsetof(Vertex2D, mColor));
-
-    glVertexAttribPointer(TEXCOORD_INDEX, 2, GL_FLOAT, GL_FALSE, stride, (void *)offsetof(Vertex2D, mUV));
-
-    glEnableVertexAttribArray(POSITION_INDEX);
-    glEnableVertexAttribArray(COLOR_INDEX);
-    glEnableVertexAttribArray(TEXCOORD_INDEX);
-
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    sVBO->Unbind();
 
     glGenQueries(1, &renderTimeQueryID);
 
@@ -128,13 +127,13 @@ void Flush() {
     // printf("Flushing %d Vertices\n", vertexPtr);
     glBindVertexArray(vaoID);
 
-    glBindBuffer(GL_ARRAY_BUFFER, vboID);
-    glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(Vertex2D) * vertexPtr, vertices);
+    sVBO->Bind();
+    sVBO->SetData(vertices, vertexPtr);
     glBeginQuery(GL_TIME_ELAPSED, renderTimeQueryID);
     glDrawArrays(GL_QUADS, 0, vertexPtr);
     glEndQuery(GL_TIME_ELAPSED);
 
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    sVBO->Unbind();
     glBindVertexArray(0);
 
     indexPtr = 0;
