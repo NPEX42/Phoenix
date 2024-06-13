@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 conf=${1-"debug"}
-premake5 gmake2
+./premake5 gmake2
 if [ "$1" == "clean" ]; then
 make clean
 exit 0
