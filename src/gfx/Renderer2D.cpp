@@ -1,10 +1,12 @@
 #include "Phoenix/gfx/Api.hpp"
 #include "Phoenix/gfx/Texture.hpp"
 #include "Phoenix/gfx/ogl/Buffer.hpp"
+#include "glm/detail/qualifier.hpp"
 #include "glm/ext/matrix_float4x4.hpp"
 #include "glm/ext/matrix_transform.hpp"
 #include "glm/ext/vector_float2.hpp"
 #include "glm/ext/vector_float3.hpp"
+#include "glm/gtx/transform.hpp"
 #include "glm/mat4x4.hpp"
 #include <complex>
 #include <cstddef>
@@ -62,6 +64,63 @@ void SetFrameSize(float w, float h) {
     Height = h;
 }
 
+void RotatedQuad(const glm::vec2 &ctr, float angle,const glm::vec2 &size,const glm::vec3 &color, const glm::vec2& uv0, const glm::vec2& uv1) {
+    glm::mat4 transform = glm::mat4(1);
+
+    
+
+    
+    glm::mat4 rot = glm::rotate(glm::mat4(1), angle, {0, 0, 1});
+    glm::mat4 trans = glm::translate(glm::mat4(1), {ctr.x, ctr.y, 0});
+    glm::mat4 scale = glm::scale(glm::mat4(1), {size.x, size.y, 1});
+    glm::vec4 trp, tlp, brp, blp;
+    trp = {+1, +1, 0, 0};
+    tlp = {-1, +1, 0, 0};
+    blp = {-1, -1, 0, 0};
+    brp = {+1, -1, 0, 0};
+
+    trp = trp * trans * proj;
+    tlp = tlp * trans * proj;
+    brp = brp * trans * proj;
+    blp = blp * trans * proj;
+
+    Vertex2D tl, tr, bl, br;
+
+    tr.mPosition.x = trp.x;
+    tr.mPosition.y = trp.y;
+
+    tl.mPosition.x = tlp.x;
+    tl.mPosition.y = tlp.y;
+
+    br.mPosition.x = brp.x;
+    br.mPosition.y = brp.y;
+
+    bl.mPosition.x = blp.x;
+    bl.mPosition.y = blp.y;
+
+    tr.mUV = uv1;
+    tl.mUV = {uv0.x, uv1.y};
+    br.mUV = {uv1.x, uv0.y};
+    bl.mUV = uv0;
+
+    tr.mColor = color;
+    tl.mColor = color;
+    bl.mColor = color;
+    br.mColor = color;
+
+    
+    
+    
+    
+
+    vertices[vertexPtr++] = tr;
+    vertices[vertexPtr++] = br;
+    vertices[vertexPtr++] = bl;
+    vertices[vertexPtr++] = tl;
+
+}
+
+
 void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color,const glm::vec2& uv0, const glm::vec2& uv1) {
     Vertex2D tl, tr, bl, br;
 
@@ -90,7 +149,6 @@ void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color,co
     PushVertex(tr);
     PushVertex(br);
     PushVertex(bl);
-
     PushVertex(tl);
 }
 

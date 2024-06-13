@@ -21,6 +21,8 @@ void Quad(const glm::vec2 &ctr,const glm::vec2 &size = {1, 1},const glm::vec3 &c
 
 void TextureRect(std::shared_ptr<Texture2D> texture, const glm::vec2 &ctr, const Rect& rect, const glm::vec2 &size = {1, 1},const glm::vec3 &color = {1, 1, 1});
 
+void RotatedQuad(const glm::vec2 &ctr, float angle,const glm::vec2 &size = {1, 1},const glm::vec3 &color = {1, 1, 1}, const glm::vec2& uv0 = {0, 0}, const glm::vec2& uv1 = {1, 1});
+
 void Init();
 void Flush();
 

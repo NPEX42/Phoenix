@@ -15,6 +15,7 @@
 #include "yaml-cpp/node/node.h"
 #include <Phoenix.hpp>
 #include <algorithm>
+#include <cmath>
 #include <cstddef>
 #include <cstring>
 #include <memory>
@@ -30,7 +31,7 @@ class Sandbox : public phnx::Application2D {
 
     std::shared_ptr<phnx::gfx::Texture2D> mSnom, mComputeOutput;
 
-    float mScale = 1.0f, mViewportScale = 1.0f;
+    float mScale = 0, mViewportScale = 1.0f;
     glm::vec2 pos;
 
     phnx::gfx::Shader* mShader = nullptr;
@@ -87,6 +88,7 @@ class Sandbox : public phnx::Application2D {
     }
 
     bool OnUpdate() override {
+        mScale += 2 * M_PI * 0.0016;
         return true;
     }
 
@@ -95,8 +97,8 @@ class Sandbox : public phnx::Application2D {
         mShader->Bind();
         phnx::gfx::SetAlbedo(mSnom);
         phnx::gfx::Clear(0.0f, 0.2f, 0.3f, 1.0f);
-        phnx::gfx::Quad({mFB->Width / 2, mFB->Height / 2}, {100, 100 * mSnom->Aspect()}, {1, 1, 1});
-        phnx::gfx::TextureRect(mAtlas->Texture(), {128, 128}, mAtlas->GetTileRect(mTileID), {256, 256});
+        phnx::gfx::Quad(pos, {50, 50 * mSnom->Aspect()}, {1, 1, 1});
+        //phnx::gfx::TextureRect(mAtlas->Texture(), {128, 128}, mAtlas->GetTileRect(mTileID), {256, 256});
 
         phnx::gfx::Flush();
         mFB->Unbind();
@@ -133,10 +135,10 @@ class Sandbox : public phnx::Application2D {
             ImGui::EndMenuBar();
         }
 
-        if (ImGui::SliderFloat("Scale", &mScale, 0, 200)) {
+        if (ImGui::SliderFloat("Scale", &mScale, 0, 2 * M_PI)) {
             mCompute->SetFloat("uRadius", mScale);
         }
-        ImGui::SliderFloat("Viewport Scale", &mViewportScale, 0.01f, 2.0f);
+        ImGui::SliderFloat("Viewport Scale", &mViewportScale, 0.01f, 10.0f);
         if (ImGui::SliderFloat2("Snom Position", &pos.x, 0, 1000)) {
             mCompute->SetFloat2("uPosition", pos.x, pos.y);
         }

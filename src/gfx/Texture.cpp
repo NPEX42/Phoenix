@@ -76,7 +76,12 @@ std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, int colorB
     glGenFramebuffers(1, &fbo->ID);
     glBindFramebuffer(GL_FRAMEBUFFER, fbo->ID);  
     glGenTextures(colorBuffers, fbo->ColorBuffer);
-
+    uint32_t DRAW_BUFFERS[] = {
+        GL_COLOR_ATTACHMENT0,
+        GL_COLOR_ATTACHMENT1,
+        GL_COLOR_ATTACHMENT2,
+        GL_COLOR_ATTACHMENT3
+    };
     for (int i = 0; i < colorBuffers; i++) {
         glBindTexture(GL_TEXTURE_2D, fbo->ColorBuffer[i]);
 
@@ -85,6 +90,7 @@ std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, int colorB
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST); 
         glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, fbo->ColorBuffer[i], 0); 
+        glDrawBuffers(colorBuffers, DRAW_BUFFERS);
         glBindTexture(GL_TEXTURE_2D, 0);
     }
 
@@ -127,8 +133,17 @@ void Framebuffer::Resize(int width, int height) {
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST); 
         glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, ColorBuffer[i], 0); 
+        glDrawBuffer(GL_COLOR_ATTACHMENT0 + i);
         glBindTexture(GL_TEXTURE_2D, 0);
     }
+
+    uint32_t DRAW_BUFFERS[] = {
+        GL_COLOR_ATTACHMENT0,
+        GL_COLOR_ATTACHMENT1,
+        GL_COLOR_ATTACHMENT2,
+        GL_COLOR_ATTACHMENT3
+    };
+    glDrawBuffers(ColorBufferCount, DRAW_BUFFERS);
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
