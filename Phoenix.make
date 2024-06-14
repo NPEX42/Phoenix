@@ -25,7 +25,7 @@ INCLUDES += -Ivendor/include -Iinclude
 FORCE_INCLUDE +=
 ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
 ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-LIBS += -lglfw3 -llua -lyaml-cpp -lnfd -lfmt -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0
+LIBS += -lglfw3 -llua -lyaml-cpp -lnfd -lfreetype -lpng16 -lz -lfmt -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0 -ldl -lm
 LDDEPS +=
 LINKCMD = $(AR) -rcs "$@" $(OBJECTS)
 define PREBUILDCMDS
@@ -68,6 +68,7 @@ GENERATED += $(OBJDIR)/Log.o
 GENERATED += $(OBJDIR)/OGL.o
 GENERATED += $(OBJDIR)/Phoenix.o
 GENERATED += $(OBJDIR)/Renderer2D.o
+GENERATED += $(OBJDIR)/Script.o
 GENERATED += $(OBJDIR)/Shader.o
 GENERATED += $(OBJDIR)/Texture.o
 GENERATED += $(OBJDIR)/TextureAtlas.o
@@ -77,6 +78,7 @@ GENERATED += $(OBJDIR)/glad.o
 GENERATED += $(OBJDIR)/imgui.o
 GENERATED += $(OBJDIR)/imgui_demo.o
 GENERATED += $(OBJDIR)/imgui_draw.o
+GENERATED += $(OBJDIR)/imgui_freetype.o
 GENERATED += $(OBJDIR)/imgui_impl_glfw.o
 GENERATED += $(OBJDIR)/imgui_impl_opengl3.o
 GENERATED += $(OBJDIR)/imgui_tables.o
@@ -90,6 +92,7 @@ OBJECTS += $(OBJDIR)/Log.o
 OBJECTS += $(OBJDIR)/OGL.o
 OBJECTS += $(OBJDIR)/Phoenix.o
 OBJECTS += $(OBJDIR)/Renderer2D.o
+OBJECTS += $(OBJDIR)/Script.o
 OBJECTS += $(OBJDIR)/Shader.o
 OBJECTS += $(OBJDIR)/Texture.o
 OBJECTS += $(OBJDIR)/TextureAtlas.o
@@ -99,6 +102,7 @@ OBJECTS += $(OBJDIR)/glad.o
 OBJECTS += $(OBJDIR)/imgui.o
 OBJECTS += $(OBJDIR)/imgui_demo.o
 OBJECTS += $(OBJDIR)/imgui_draw.o
+OBJECTS += $(OBJDIR)/imgui_freetype.o
 OBJECTS += $(OBJDIR)/imgui_impl_glfw.o
 OBJECTS += $(OBJDIR)/imgui_impl_opengl3.o
 OBJECTS += $(OBJDIR)/imgui_tables.o
@@ -183,6 +187,9 @@ $(OBJDIR)/imgui_demo.o: src/ImGui/imgui_demo.cpp
 $(OBJDIR)/imgui_draw.o: src/ImGui/imgui_draw.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/imgui_freetype.o: src/ImGui/imgui_freetype.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/imgui_impl_glfw.o: src/ImGui/imgui_impl_glfw.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
@@ -234,6 +241,9 @@ $(OBJDIR)/ui.o: src/gfx/ui.cpp
 $(OBJDIR)/glad.o: src/glad.c
 	@echo "$(notdir $<)"
 	$(SILENT) $(CC) $(ALL_CFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Script.o: src/scripting/Script.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 
 -include $(OBJECTS:%.o=%.d)
 ifneq (,$(PCH))

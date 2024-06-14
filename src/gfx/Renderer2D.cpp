@@ -1,3 +1,4 @@
+#include "Phoenix/Log.hpp"
 #include "Phoenix/gfx/Api.hpp"
 #include "Phoenix/gfx/Texture.hpp"
 #include "Phoenix/gfx/ogl/Buffer.hpp"
@@ -122,6 +123,7 @@ void RotatedQuad(const glm::vec2 &ctr, float angle,const glm::vec2 &size,const g
 
 
 void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color,const glm::vec2& uv0, const glm::vec2& uv1) {
+    
     Vertex2D tl, tr, bl, br;
 
     tr.mPosition.x = ctr.x + size.x / 2.0f;

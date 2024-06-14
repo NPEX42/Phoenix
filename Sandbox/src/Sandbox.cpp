@@ -1,12 +1,10 @@
 #include "Phoenix/Application2D.hpp"
 #include "Phoenix/AssetManager.hpp"
+#include <Phoenix/Graphics.hpp>
 #include "Phoenix/Log.hpp"
 #include "Phoenix/Util.hpp"
-#include "Phoenix/gfx/Renderer2D.hpp"
 #include <Phoenix/gfx/ui.hpp>
-#include "Phoenix/gfx/Shader.hpp"
-#include "Phoenix/gfx/Texture.hpp"
-#include "Phoenix/gfx/TextureAtlas.hpp"
+#include "Phoenix/scripting/Script.hpp"
 #include "fmt/core.h"
 #include "glad/glad.h"
 #include "glm/ext/vector_float2.hpp"
@@ -14,7 +12,6 @@
 #include "nfd.h"
 #include "yaml-cpp/node/node.h"
 #include <Phoenix.hpp>
-#include <algorithm>
 #include <cmath>
 #include <cstddef>
 #include <cstring>
@@ -22,7 +19,7 @@
 #include <string>
 
 #include <nfd.hpp>
-#include <string_view>
+#include <vector>
 
 class Sandbox : public phnx::Application2D {
 
@@ -45,6 +42,11 @@ class Sandbox : public phnx::Application2D {
 
     std::shared_ptr<phnx::gfx::TextureAtlas> mAtlas;
     std::string mTileID;
+
+    std::vector<std::shared_ptr<phnx::SpriteScript>> mScripts;
+
+
+    #define MAX_SPRITES (1024)
 
     bool OnCreate() override {
 
@@ -83,12 +85,18 @@ class Sandbox : public phnx::Application2D {
 
         mAtlas->Texture()->SetFilterModes(GL_NEAREST, GL_NEAREST);
         
+        for (int i = 0; i < MAX_SPRITES; i++) {
+            mScripts.push_back(std::make_shared<phnx::SpriteScript>("res/scripts/test.lua"));
+            mScripts[i]->Init();
+        }
 
         return true;
     }
 
     bool OnUpdate() override {
-        mScale += 2 * M_PI * 0.0016;
+        for (int i = 0; i < MAX_SPRITES; i++) {
+            mScripts[i]->Update();
+        }
         return true;
     }
 
@@ -97,8 +105,11 @@ class Sandbox : public phnx::Application2D {
         mShader->Bind();
         phnx::gfx::SetAlbedo(mSnom);
         phnx::gfx::Clear(0.0f, 0.2f, 0.3f, 1.0f);
-        phnx::gfx::Quad(pos, {50, 50 * mSnom->Aspect()}, {1, 1, 1});
+        //phnx::gfx::Quad(pos, {50, 50 * mSnom->Aspect()}, {1, 1, 1});
         //phnx::gfx::TextureRect(mAtlas->Texture(), {128, 128}, mAtlas->GetTileRect(mTileID), {256, 256});
+        for (int i = 0; i < MAX_SPRITES; i++) {
+            mScripts[i]->Render();
+        }
 
         phnx::gfx::Flush();
         mFB->Unbind();
@@ -139,18 +150,16 @@ class Sandbox : public phnx::Application2D {
             mCompute->SetFloat("uRadius", mScale);
         }
         ImGui::SliderFloat("Viewport Scale", &mViewportScale, 0.01f, 10.0f);
-        if (ImGui::SliderFloat2("Snom Position", &pos.x, 0, 1000)) {
+        if (ImGui::SliderFloat2("Snom Position", &pos.x, 0, mFB->Width)) {
             mCompute->SetFloat2("uPosition", pos.x, pos.y);
         }
         ImGui::Text("Viewport Size: %dx%d", phnx::gfx::FrameWidth(), phnx::gfx::FrameHeight());
-
+        ImGui::Text("FPS: %d", FrameRate());
         ImGui::End();
 
         ImGui::Begin("Viewport");
-        
-        ImVec2 size = ImGui::GetContentRegionAvail();
         ImGui::Image(
-            (ImTextureID) mFB->ColorBuffer[0], 
+            (ImTextureID) (uint64_t)mFB->ColorBuffer[0], 
             {mFB->Width * mViewportScale, mFB->Height * mViewportScale},
             {0, 1}, {1, 0}
             );
@@ -172,7 +181,7 @@ class Sandbox : public phnx::Application2D {
         
         (ImGui::InputText("Name", nameBuffer, 128));
 
-        if (ImGui::ImageButton("##TextureSelection", (ImTextureID) mSnom->ID(), {128, 128})) {
+        if (ImGui::ImageButton("##TextureSelection", (ImTextureID)(uint64_t) mSnom->ID(), {128, 128 * mSnom->Aspect()})) {
             nfdchar_t* path;
             nfdresult_t result = NFD_OpenDialog(&path, nullptr, 0, nullptr);
             if (result == NFD_OKAY) {
@@ -194,7 +203,7 @@ class Sandbox : public phnx::Application2D {
             for (int x = 0; x < mAtlas->Columns(); x++) {
                 phnx::gfx::RectUVs uvs = mAtlas->GetTileRectUV(fmt::format("tile_{}_{}", x, y));
 
-                ImGui::Image((ImTextureID) mAtlas->Texture()->ID(), {32, 32},
+                ImGui::Image((ImTextureID)(uint64_t) mAtlas->Texture()->ID(), {32, 32},
                     {uvs.UV0.x, uvs.UV0.y}, {uvs.UV1.x, uvs.UV1.y}
                 );
 

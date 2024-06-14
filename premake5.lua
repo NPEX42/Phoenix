@@ -29,6 +29,9 @@ links({
 	"lua",
 	"yaml-cpp",
 	"nfd",
+	"freetype",
+	"png16",
+	"z",
 	"fmt",
 })
 
@@ -46,6 +49,8 @@ filter("system:linux")
 		"gdk_pixbuf-2.0",
 		"gobject-2.0",
 		"glib-2.0",
+		"dl",
+		"m"
 	})
 
 filter("system:windows")
@@ -97,6 +102,9 @@ links({
 	"yaml-cpp",
 	"nfd",
 	"fmt",
+	"freetype",
+	"png16",
+	"z",
 	"Phoenix",
 })
 -- -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 

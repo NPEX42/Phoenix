@@ -1,4 +1,5 @@
 #include "imgui.h"
+#include "misc/freetype/imgui_freetype.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 #include <Phoenix/gfx/ui.hpp>
@@ -13,7 +14,13 @@ void Init(GLFWwindow *window) {
     ImGuiIO& io = ImGui::GetIO();
     io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
 
+    ImFontConfig config = {};
+    config;
 
+
+
+    io.Fonts->FontBuilderIO = ImGuiFreeType::GetBuilderForFreeType();
+    io.FontDefault = io.Fonts->AddFontFromFileTTF("res/fonts/FiracodeNerd.ttf", 16);
     ImVec4* colors = ImGui::GetStyle().Colors;
 
     colors[ImGuiCol_Text]                   = ImVec4(1.00f, 1.00f, 1.00f, 1.00f);

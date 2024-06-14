@@ -24,6 +24,7 @@ namespace phnx {
         
         
         while (mWindow->IsOpen()) {
+            mFrameStart = glfwGetTime();
             PollEvents();
             if (!OnUpdate()) {
                 break;
@@ -34,6 +35,7 @@ namespace phnx {
             ui::EndFrame();
             
             mWindow->SwapBuffers();
+            mDeltaTime = glfwGetTime() - mFrameStart;
         }
         
         OnDestroy();

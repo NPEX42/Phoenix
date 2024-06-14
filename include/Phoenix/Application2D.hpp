@@ -21,7 +21,11 @@ namespace phnx {
 
 
         void Start();
+
+        int FrameRate( ) const {return 1 / mDeltaTime;}
+        float DeltaTime() const {return mDeltaTime;}
     private:
         Window* mWindow;
+        float mDeltaTime, mFrameStart;
     }; 
 }
