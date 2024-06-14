@@ -20,6 +20,11 @@ namespace phnx {
 
             bool SimpleCall(const std::string& func);
 
+            bool PushTable(const std::string& func);
+            
+            template<typename T>
+            T GetField(const std::string& field);
+
         protected:
         private:
             lua_State* L;

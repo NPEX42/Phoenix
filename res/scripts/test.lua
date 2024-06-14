@@ -1,10 +1,6 @@
 X = 0;
 Y = 0;
 
-function Init()
-    print("[LUA] Hello, World!");
-end
-
 function Render()
     DrawSprite(X, Y, 100, 100, "Snom");
 end

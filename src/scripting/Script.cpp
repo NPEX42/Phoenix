@@ -16,6 +16,10 @@ namespace phnx {
         luaL_dofile(state, filepath.c_str());
 
         lua_register(state, "DrawSprite", DrawSprite);
+
+
+        
+
         return std::make_shared<Script>(state);
     }
 
@@ -61,6 +65,11 @@ namespace phnx {
         return false;
     }
 
+    bool Script::PushTable(const std::string& name) {
+        lua_getglobal(L, name.c_str());
+        return lua_istable(L, -1);
+    }
+
     SpriteScript::SpriteScript(const std::string& filepath) {
         mScript = Script::LoadFile(filepath);
         mScript->SetupLibs();
@@ -76,6 +85,33 @@ namespace phnx {
 
     void SpriteScript::Update() {
         mScript->SimpleCall("Update");
+    }
+
+    template<>
+    int Script::GetField<int>(const std::string& field) {
+        lua_pushstring(L, field.c_str());
+        lua_gettable(L, -2);
+        int value = (int) lua_tonumber(L, -1);
+        lua_pop(L, 1);
+        return value;
+    }
+
+    template<>
+    float Script::GetField<float>(const std::string& field) {
+        lua_pushstring(L, field.c_str());
+        lua_gettable(L, -2);
+        int value = (int) lua_tonumber(L, -1);
+        lua_pop(L, 1);
+        return value;
+    }
+
+    template<>
+    const char* Script::GetField<const char*>(const std::string& field) {
+        lua_pushstring(L, field.c_str());
+        lua_gettable(L, -2);
+        const char* value = (const char*) lua_tostring(L, -1);
+        lua_pop(L, 1);
+        return value;
     }
 
 }

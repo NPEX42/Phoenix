@@ -9,6 +9,8 @@ language("C++")
 cppdialect("C++2a")
 kind("StaticLib")
 
+defines({"GLFW_INCLUDE_NONE"})
+
 files({
 	"src/**.cpp",
 	"src/**.c",

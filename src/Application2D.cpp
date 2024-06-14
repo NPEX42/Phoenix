@@ -1,3 +1,4 @@
+#define GLFW_INCLUDE_NONE
 #include "GLFW/glfw3.h"
 #include <Phoenix/Application2D.hpp>
 #include <Phoenix/gfx/ui.hpp>
