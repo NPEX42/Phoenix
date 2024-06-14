@@ -6,7 +6,7 @@ objdir("obj/")
 
 project("Phoenix")
 language("C++")
-cppdialect("C++20")
+cppdialect("C++2a")
 kind("StaticLib")
 
 files({
@@ -78,7 +78,7 @@ symbols "Off"
 
 project("Sandbox")
 language("C++")
-cppdialect("C++20")
+cppdialect("C++2a")
 kind("ConsoleApp")
 
 files({
