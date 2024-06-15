@@ -8,10 +8,24 @@ fi
 if [ "$1" == "gdb" ]; then
 conf="debug"
 fi
+
+if [ "$1" != "pkg" ]; then 
+
 make config=$conf || exit
+
+fi
 
 if [ "$1" == "gdb" ]; then
     gdb ./bin/Sandbox
+    exit
+fi
+
+if [ "$1" == "pkg" ]; then 
+    mkdir -p Phoenix/lib
+    cp ./bin/libPhoenix.a ./Phoenix/lib
+    cp -r ./include ./Phoenix/include
+    tar cvjf ./Phoenix-$(date +%Y%m%d-%H%m).tar.bz2 Phoenix
+    rm -rf Phoenix
     exit
 fi
 

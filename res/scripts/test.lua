@@ -1,8 +1,14 @@
 X = 0;
 Y = 0;
+W = 0;
+
+
+function Init()
+    W = math.random(10, 100);
+end
 
 function Render()
-    DrawSprite(X, Y, 100, 100, "Snom");
+    DrawSprite(X, Y, W, W, "Snom");
 end
 
 function Update()

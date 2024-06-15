@@ -8,6 +8,8 @@
 
 #include <Phoenix/Log.hpp>
 
+#include <Phoenix/gfx/ogl/OGL.hpp>
+
 namespace phnx {
 namespace gfx {
 
@@ -73,9 +75,9 @@ void Texture2D::SetFilterModes(int min, int max) {
 
 std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, int colorBuffers) {
     auto fbo = std::make_shared<Framebuffer>();
-    glGenFramebuffers(1, &fbo->ID);
-    glBindFramebuffer(GL_FRAMEBUFFER, fbo->ID);  
-    glGenTextures(colorBuffers, fbo->ColorBuffer);
+    GL_CHECK(glGenFramebuffers(1, &fbo->ID));
+    GL_CHECK(glBindFramebuffer(GL_FRAMEBUFFER, fbo->ID));  
+    GL_CHECK(glGenTextures(colorBuffers, fbo->ColorBuffer));
     uint32_t DRAW_BUFFERS[] = {
         GL_COLOR_ATTACHMENT0,
         GL_COLOR_ATTACHMENT1,
@@ -83,15 +85,15 @@ std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, int colorB
         GL_COLOR_ATTACHMENT3
     };
     for (int i = 0; i < colorBuffers; i++) {
-        glBindTexture(GL_TEXTURE_2D, fbo->ColorBuffer[i]);
+        GL_CHECK(glBindTexture(GL_TEXTURE_2D, fbo->ColorBuffer[i]));
 
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+        GL_CHECK(glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL));
 
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST); 
-        glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, fbo->ColorBuffer[i], 0); 
-        glDrawBuffers(colorBuffers, DRAW_BUFFERS);
-        glBindTexture(GL_TEXTURE_2D, 0);
+        GL_CHECK(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST));
+        GL_CHECK(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)); 
+        GL_CHECK(glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, fbo->ColorBuffer[i], 0)); 
+        GL_CHECK(glDrawBuffers(colorBuffers, DRAW_BUFFERS));
+        GL_CHECK(glBindTexture(GL_TEXTURE_2D, 0));
     }
 
     fbo->Width = width;
@@ -103,7 +105,7 @@ std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, int colorB
     } else {
         PHNX_ERR("Failed To Create FBO");
     }
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    GL_CHECK(glBindFramebuffer(GL_FRAMEBUFFER, 0));
 
 
     return fbo;
@@ -143,8 +145,8 @@ void Framebuffer::Resize(int width, int height) {
         GL_COLOR_ATTACHMENT2,
         GL_COLOR_ATTACHMENT3
     };
-    glDrawBuffers(ColorBufferCount, DRAW_BUFFERS);
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    GL_CHECK(glDrawBuffers(ColorBufferCount, DRAW_BUFFERS));
+    GL_CHECK(glBindFramebuffer(GL_FRAMEBUFFER, 0));
 }
 
 

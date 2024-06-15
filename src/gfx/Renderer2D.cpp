@@ -169,7 +169,7 @@ void Init() {
     sVBO->SetLayout(POSITION_INDEX, DataType::F32, 3, stride, offsetof(Vertex2D, mPosition));
     
     sVBO->SetLayout(COLOR_INDEX, DataType::F32, 3, stride, offsetof(Vertex2D, mColor));
-    sVBO->SetLayout(TEXCOORD_INDEX, DataType::F32, 3, stride, offsetof(Vertex2D, mUV));
+    sVBO->SetLayout(TEXCOORD_INDEX, DataType::F32, 2, stride, offsetof(Vertex2D, mUV));
 
     sVBO->Unbind();
 

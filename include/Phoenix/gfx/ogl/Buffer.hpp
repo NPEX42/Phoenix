@@ -2,6 +2,7 @@
 #include <Phoenix/gfx/ogl/OGL.hpp>
 #include <cstdint>
 #include "../Api.hpp"
+#include "Phoenix/Log.hpp"
 #include "glad/glad.h"
 
 namespace GL {
@@ -19,6 +20,7 @@ namespace GL {
                 if (mHasAllocated) {
                     GL_CHECK(glBufferSubData(mType, 0, size * sizeof(T), data));
                 } else {
+                    PHNX_DEBUG("Allocated %d Bytes In VBO %d", size * sizeof(T), mID);
                     GL_CHECK(glBufferData(mType, size * sizeof(T), data, GL_STREAM_DRAW));
                     mHasAllocated = true;
                 }
@@ -29,7 +31,7 @@ namespace GL {
             Buffer(phnx::gfx::BufferType type);       
     private:
         uint32_t mID = 0, mSize = 0, mType = GL_ARRAY_BUFFER;
-        bool mHasAllocated;
+        bool mHasAllocated = false;
     };
 
 

@@ -3,7 +3,7 @@
 #include "Phoenix/Log.hpp"
 #include "Phoenix/gfx/Renderer2D.hpp"
 extern "C" {
-    #include <lua.h>
+    #include "lua/lua.h"
 }
 #include <Phoenix/scripting/Script.hpp>
 #include <Phoenix/scripting/CAPI.hpp>
