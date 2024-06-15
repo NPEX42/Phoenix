@@ -3,7 +3,6 @@
 #include "glad/glad.h"
 #include "glm/ext/vector_float2.hpp"
 #include "imgui.h"
-#include <GL/gl.h>
 #include <GLFW/glfw3.h>
 #include <Phoenix.hpp>
 #include <cstdio>

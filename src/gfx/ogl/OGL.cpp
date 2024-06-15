@@ -1,7 +1,6 @@
 
 #include "Phoenix/Log.hpp"
 #include "glad/glad.h"
-#include <GL/gl.h>
 #include <Phoenix/gfx/ogl/OGL.hpp>
 #include <cstdint>
 #include <string>

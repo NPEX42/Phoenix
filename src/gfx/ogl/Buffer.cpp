@@ -1,7 +1,5 @@
 #include "Phoenix/Log.hpp"
 #include "glad/glad.h"
-#include <GL/gl.h>
-#include <GL/glext.h>
 #include <Phoenix/gfx/ogl/Buffer.hpp>
 #include <cstdint>
 #include <sys/types.h>
