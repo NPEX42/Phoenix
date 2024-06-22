@@ -55,5 +55,24 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "files.exclude": {
+    "compile_flags.txt": true,
+    ".cache": true,
+    ".github": true,
+    ".vscode": true,
+    "Sandbox.make": true,
+    "premake5": true,
+    "Phoenix.make": true,
+    "Makefile": true,
+    "debug": true,
+    ".gitmodules": true,
+    ".gitignore": true,
+    ".clangd": true,
+    ".clang-format": true,
+    "compile_commands.json": true,
+    "obj": true,
+    "bin": true,
+    "Debug": true
+  }
 }

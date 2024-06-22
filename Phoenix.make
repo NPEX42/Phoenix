@@ -64,10 +64,15 @@ OBJECTS :=
 GENERATED += $(OBJDIR)/Application2D.o
 GENERATED += $(OBJDIR)/AssetManager.o
 GENERATED += $(OBJDIR)/Buffer.o
+GENERATED += $(OBJDIR)/Component.o
+GENERATED += $(OBJDIR)/ECS.o
+GENERATED += $(OBJDIR)/Entity.o
 GENERATED += $(OBJDIR)/Log.o
 GENERATED += $(OBJDIR)/OGL.o
 GENERATED += $(OBJDIR)/Phoenix.o
+GENERATED += $(OBJDIR)/Project.o
 GENERATED += $(OBJDIR)/Renderer2D.o
+GENERATED += $(OBJDIR)/Scene.o
 GENERATED += $(OBJDIR)/Script.o
 GENERATED += $(OBJDIR)/Shader.o
 GENERATED += $(OBJDIR)/Texture.o
@@ -88,10 +93,15 @@ GENERATED += $(OBJDIR)/ui.o
 OBJECTS += $(OBJDIR)/Application2D.o
 OBJECTS += $(OBJDIR)/AssetManager.o
 OBJECTS += $(OBJDIR)/Buffer.o
+OBJECTS += $(OBJDIR)/Component.o
+OBJECTS += $(OBJDIR)/ECS.o
+OBJECTS += $(OBJDIR)/Entity.o
 OBJECTS += $(OBJDIR)/Log.o
 OBJECTS += $(OBJDIR)/OGL.o
 OBJECTS += $(OBJDIR)/Phoenix.o
+OBJECTS += $(OBJDIR)/Project.o
 OBJECTS += $(OBJDIR)/Renderer2D.o
+OBJECTS += $(OBJDIR)/Scene.o
 OBJECTS += $(OBJDIR)/Script.o
 OBJECTS += $(OBJDIR)/Shader.o
 OBJECTS += $(OBJDIR)/Texture.o
@@ -241,6 +251,21 @@ $(OBJDIR)/ui.o: src/gfx/ui.cpp
 $(OBJDIR)/glad.o: src/glad.c
 	@echo "$(notdir $<)"
 	$(SILENT) $(CC) $(ALL_CFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Component.o: src/project/Component.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/ECS.o: src/project/ECS.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Entity.o: src/project/Entity.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Project.o: src/project/Project.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Scene.o: src/project/Scene.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Script.o: src/scripting/Script.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"

@@ -12,6 +12,6 @@ namespace GL {
     void CheckError(const std::string& call);
 
     
-
+    
     uint32_t DataTypeToGL(phnx::gfx::DataType type);
 }

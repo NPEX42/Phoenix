@@ -17,6 +17,7 @@ namespace phnx {
         virtual void OnRender() = 0;
         virtual void OnDestroy() = 0;
         virtual void OnImGui() = 0;
+        virtual void OnImGuiMainMenu();
         virtual WindowSpec WindowSpecs() = 0;
 
 

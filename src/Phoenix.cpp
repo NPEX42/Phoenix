@@ -57,5 +57,6 @@ float RandFloat(float max) {
 int main() {
     phnx::Init();
     phnx::Application2D* app = CreateApp();
-    app->Start();
+    if (app)
+        app->Start();
 }

@@ -11,16 +11,18 @@ endif
 ifeq ($(config),debug)
   Phoenix_config = debug
   Sandbox_config = debug
+  PhoenixEditor_config = debug
 
 else ifeq ($(config),release)
   Phoenix_config = release
   Sandbox_config = release
+  PhoenixEditor_config = release
 
 else
   $(error "invalid configuration $(config)")
 endif
 
-PROJECTS := Phoenix Sandbox
+PROJECTS := Phoenix Sandbox PhoenixEditor
 
 .PHONY: all clean help $(PROJECTS) 
 
@@ -38,9 +40,16 @@ ifneq (,$(Sandbox_config))
 	@${MAKE} --no-print-directory -C . -f Sandbox.make config=$(Sandbox_config)
 endif
 
+PhoenixEditor: Phoenix
+ifneq (,$(PhoenixEditor_config))
+	@echo "==== Building PhoenixEditor ($(PhoenixEditor_config)) ===="
+	@${MAKE} --no-print-directory -C PhoenixEditor -f Makefile config=$(PhoenixEditor_config)
+endif
+
 clean:
 	@${MAKE} --no-print-directory -C . -f Phoenix.make clean
 	@${MAKE} --no-print-directory -C . -f Sandbox.make clean
+	@${MAKE} --no-print-directory -C PhoenixEditor -f Makefile clean
 
 help:
 	@echo "Usage: make [config=name] [target]"
@@ -54,5 +63,6 @@ help:
 	@echo "   clean"
 	@echo "   Phoenix"
 	@echo "   Sandbox"
+	@echo "   PhoenixEditor"
 	@echo ""
 	@echo "For more information, see https://github.com/premake/premake-core/wiki"

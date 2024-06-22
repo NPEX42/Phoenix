@@ -1,3 +1,5 @@
+#include "imgui.h"
+#include "nfd.hpp"
 #define GLFW_INCLUDE_NONE
 #include "GLFW/glfw3.h"
 #include <Phoenix/Application2D.hpp>
@@ -18,6 +20,8 @@ namespace phnx {
 
         ui::Init((GLFWwindow *)mWindow->Handle());
 
+        NFD::Init();
+
         if (!OnCreate()) {
             return;
         }
@@ -32,6 +36,11 @@ namespace phnx {
             }
             OnRender();
             ui::BeginFrame();
+
+            if (ImGui::BeginMainMenuBar()) {
+                OnImGuiMainMenu();
+                ImGui::EndMainMenuBar();
+            }
             OnImGui();
             ui::EndFrame();
             
@@ -41,4 +50,6 @@ namespace phnx {
         
         OnDestroy();
     }
+
+    void Application2D::OnImGuiMainMenu() {}
 }

@@ -16,7 +16,7 @@ namespace phnx {
         luaL_dofile(state, filepath.c_str());
 
         lua_register(state, "DrawSprite", DrawSprite);
-
+        lua_register(state, "DrawRotatedSprite", DrawRotatedSprite);
 
         
 
@@ -129,6 +129,25 @@ int DrawSprite(lua_State *L) {
 
     phnx::gfx::SetAlbedo(phnx::AssetManager::GetTextureByName(spriteName));
     phnx::gfx::Quad({x, y}, {w, h});
+
+
+    return 0;
+}
+
+int DrawRotatedSprite(lua_State* L) {
+    float x, y, w, h, angle;
+    const char* spriteName;
+    
+    x = lua_tonumber(L, 1);
+    y = lua_tonumber(L, 2);
+    w = lua_tonumber(L, 3);
+    h = lua_tonumber(L, 4);
+    angle = lua_tonumber(L, 5);
+
+    spriteName = lua_tostring(L, 6);
+
+    phnx::gfx::SetAlbedo(phnx::AssetManager::GetTextureByName(spriteName));
+    phnx::gfx::RotatedQuad({x, y}, angle, {w, h});
 
 
     return 0;

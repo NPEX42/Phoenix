@@ -5,6 +5,11 @@
 #include <unistd.h>
 #endif
 
+#include <Phoenix/Util.hpp>
+#include <Phoenix/AssetManager.hpp>
+#include <Phoenix/Graphics.hpp>
+#include <Phoenix/scripting/Script.hpp>
+
 typedef struct GLFWwindow GLFWwindow;
 
 namespace phnx {

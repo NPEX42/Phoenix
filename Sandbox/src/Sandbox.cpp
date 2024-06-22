@@ -97,6 +97,7 @@ class Sandbox : public phnx::Application2D {
         for (int i = 0; i < MAX_SPRITES; i++) {
             mScripts[i]->Update();
         }
+        mScale += 2 * M_PI * DeltaTime();
         return true;
     }
 
@@ -105,7 +106,7 @@ class Sandbox : public phnx::Application2D {
         mShader->Bind();
         phnx::gfx::SetAlbedo(mSnom);
         phnx::gfx::Clear(0.0f, 0.2f, 0.3f, 1.0f);
-        //phnx::gfx::Quad(pos, {50, 50 * mSnom->Aspect()}, {1, 1, 1});
+        phnx::gfx::RotatedQuad(pos, mScale, {50, 50 * mSnom->Aspect()}, {1, 1, 1});
         //phnx::gfx::TextureRect(mAtlas->Texture(), {128, 128}, mAtlas->GetTileRect(mTileID), {256, 256});
         for (int i = 0; i < MAX_SPRITES; i++) {
             mScripts[i]->Render();

@@ -38,6 +38,7 @@ static int32_t renderTimeSum;
 #define POSITION_INDEX 0
 #define COLOR_INDEX 1
 #define TEXCOORD_INDEX 2
+#define UUID_INDEX 3
 
 static Vertex2D vertices[MAX_VERTS];
 static uint16_t indexPtr = 0;
@@ -52,6 +53,8 @@ static int batches;
 
 static std::unique_ptr<GL::Buffer> sVBO;
 
+static uint64_t UUID;
+
 void Clear(float r, float g, float b, float a) {
     glClearColor(r, g, b, a);
     glClear(GL_COLOR_BUFFER_BIT);
@@ -65,6 +68,10 @@ void SetFrameSize(float w, float h) {
     Height = h;
 }
 
+void SetUUID(uint64_t uuid) {
+    UUID = uuid;
+}
+
 void RotatedQuad(const glm::vec2 &ctr, float angle,const glm::vec2 &size,const glm::vec3 &color, const glm::vec2& uv0, const glm::vec2& uv1) {
     glm::mat4 transform = glm::mat4(1);
 
@@ -74,16 +81,20 @@ void RotatedQuad(const glm::vec2 &ctr, float angle,const glm::vec2 &size,const g
     glm::mat4 rot = glm::rotate(glm::mat4(1), angle, {0, 0, 1});
     glm::mat4 trans = glm::translate(glm::mat4(1), {ctr.x, ctr.y, 0});
     glm::mat4 scale = glm::scale(glm::mat4(1), {size.x, size.y, 1});
-    glm::vec4 trp, tlp, brp, blp;
-    trp = {+1, +1, 0, 0};
-    tlp = {-1, +1, 0, 0};
-    blp = {-1, -1, 0, 0};
-    brp = {+1, -1, 0, 0};
 
-    trp = trp * trans * proj;
-    tlp = tlp * trans * proj;
-    brp = brp * trans * proj;
-    blp = blp * trans * proj;
+    glm::vec4 trp, tlp, brp, blp;
+
+    trp = {+1, +1, 0, 1};
+    tlp = {-1, +1, 0, 1};
+    blp = {-1, -1, 0, 1};
+    brp = {+1, -1, 0, 1};
+
+    transform = trans * rot * scale;
+
+    trp = proj * transform * trp;
+    tlp = proj * transform * tlp;
+    brp = proj * transform * brp;
+    blp = proj * transform * blp;
 
     Vertex2D tl, tr, bl, br;
 
@@ -108,6 +119,11 @@ void RotatedQuad(const glm::vec2 &ctr, float angle,const glm::vec2 &size,const g
     tl.mColor = color;
     bl.mColor = color;
     br.mColor = color;
+
+    tr.mUUID = UUID;
+    tl.mUUID = UUID;
+    br.mUUID = UUID;
+    bl.mUUID = UUID;
 
     
     
@@ -148,6 +164,11 @@ void Quad(const glm::vec2 &ctr, const glm::vec2 &size, const glm::vec3 &color,co
     bl.mColor = color;
     br.mColor = color;
 
+    tr.mUUID = UUID;
+    tl.mUUID = UUID;
+    br.mUUID = UUID;
+    bl.mUUID = UUID;
+
     PushVertex(tr);
     PushVertex(br);
     PushVertex(bl);
@@ -170,6 +191,8 @@ void Init() {
     
     sVBO->SetLayout(COLOR_INDEX, DataType::F32, 3, stride, offsetof(Vertex2D, mColor));
     sVBO->SetLayout(TEXCOORD_INDEX, DataType::F32, 2, stride, offsetof(Vertex2D, mUV));
+    
+    sVBO->SetLayout(UUID_INDEX, DataType::U64, 1, stride, offsetof(Vertex2D, mUUID));
 
     sVBO->Unbind();
 

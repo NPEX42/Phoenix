@@ -87,7 +87,7 @@ std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, int colorB
     for (int i = 0; i < colorBuffers; i++) {
         GL_CHECK(glBindTexture(GL_TEXTURE_2D, fbo->ColorBuffer[i]));
 
-        GL_CHECK(glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL));
+        GL_CHECK(glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_INT, NULL));
 
         GL_CHECK(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST));
         GL_CHECK(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)); 
@@ -154,6 +154,54 @@ std::shared_ptr<Texture2D> CreateTexture2D(int width, int height, uint32_t *pixe
     return std::make_shared<Texture2D>(width, height, (uint8_t*) pixels, format);
 }
 
+uint32_t ImageFormatToGL(ImageFormat fmt) {
+    switch (fmt) {
+        case Grayscale8: return GL_R8;
+        case Grayscale16: return GL_R16;
+        case RGBA8: return GL_RGBA;
+        case RGBA16: return GL_RGBA16;
+        case RGBA16F: return GL_RGBA16F;
+    }
+}
+
+
+std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, const std::vector<ImageFormat>& formats) {
+    auto fbo = std::make_shared<Framebuffer>();
+    GL_CHECK(glGenFramebuffers(1, &fbo->ID));
+    GL_CHECK(glBindFramebuffer(GL_FRAMEBUFFER, fbo->ID));  
+    GL_CHECK(glGenTextures(formats.size(), fbo->ColorBuffer));
+    uint32_t DRAW_BUFFERS[] = {
+        GL_COLOR_ATTACHMENT0,
+        GL_COLOR_ATTACHMENT1,
+        GL_COLOR_ATTACHMENT2,
+        GL_COLOR_ATTACHMENT3
+    };
+    for (int i = 0; i < formats.size(); i++) {
+        GL_CHECK(glBindTexture(GL_TEXTURE_2D, fbo->ColorBuffer[i]));
+
+        GL_CHECK(glTexImage2D(GL_TEXTURE_2D, 0, ImageFormatToGL(formats[i]), width, height, 0, formats[i], GL_UNSIGNED_INT, NULL));
+
+        GL_CHECK(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST));
+        GL_CHECK(glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)); 
+        GL_CHECK(glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, fbo->ColorBuffer[i], 0)); 
+        GL_CHECK(glDrawBuffers(formats.size(), DRAW_BUFFERS));
+        GL_CHECK(glBindTexture(GL_TEXTURE_2D, 0));
+    }
+
+    fbo->Width = width;
+    fbo->Height = height;
+    fbo->ColorBufferCount = formats.size();
+    
+    if(glCheckFramebufferStatus(GL_FRAMEBUFFER) == GL_FRAMEBUFFER_COMPLETE) {
+        PHNX_INFO("Created FBO #%d", fbo->ID);
+    } else {
+        PHNX_ERR("Failed To Create FBO");
+    }
+    GL_CHECK(glBindFramebuffer(GL_FRAMEBUFFER, 0));
+
+
+    return fbo;
+}
 
 } // namespace gfx
 } // namespace phnx

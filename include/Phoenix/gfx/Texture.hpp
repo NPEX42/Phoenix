@@ -6,8 +6,30 @@
 #include <string>
 #include <sys/types.h>
 #include <glad/glad.h>
+#include <vector>
 namespace phnx {
 namespace gfx {
+
+enum ImageFormat {
+    Grayscale8,
+    Grayscale16,
+    Grayscale32,
+    RGBA8,
+    RGBA16,
+    RGBA16F,
+};
+
+static std::vector<ImageFormat> ImageFormats = {
+    Grayscale8,
+    Grayscale16,
+    Grayscale32,
+    RGBA8,
+    RGBA16,
+    RGBA16F,
+};
+
+uint32_t ImageFormatToGL(ImageFormat fmt); 
+
 class Texture2D {
 public:
     Texture2D(int width, int height, uint8_t *pixels, uint format = GL_RGBA, std::string filepath = "");
@@ -57,6 +79,8 @@ struct Framebuffer {
 };
 
 std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, int colorBuffers);
+std::shared_ptr<Framebuffer> CreateFramebuffer(int width, int height, const std::vector<ImageFormat>& formats);
+
 
 } // namespace gfx
 } // namespace phnx

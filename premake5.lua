@@ -144,3 +144,7 @@ filter("configurations:Release")
 defines({ "NDEBUG" })
 optimize("On")
 symbols "Off"
+
+
+filter {}
+include("PhoenixEditor")

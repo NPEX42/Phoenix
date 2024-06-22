@@ -19,7 +19,7 @@ public:
     void SetInt(std::string name, int value);
 
 private:
-    uint32_t mID;
+    uint32_t mID = 0;
     std::unordered_map<std::string, uint32_t> mUniforms;
 
     uint32_t GetUniformLocation(std::string name);

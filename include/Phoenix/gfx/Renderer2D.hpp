@@ -2,6 +2,7 @@
 
 #include "Phoenix/gfx/Texture.hpp"
 #include "Phoenix/gfx/TextureAtlas.hpp"
+#include "glm/ext/scalar_uint_sized.hpp"
 #include "glm/ext/vector_float2.hpp"
 #include "glm/ext/vector_float3.hpp"
 #include <glm/vec3.hpp>
@@ -14,6 +15,7 @@ struct Vertex2D {
     glm::vec2 mPosition;
     glm::vec3 mColor;
     glm::vec2 mUV;
+    uint64_t mUUID;
 };
 
 void Clear(float r, float g, float b, float a);
@@ -35,6 +37,7 @@ int FrameWidth();
 int FrameHeight();
 
 void SetAlbedo(std::shared_ptr<Texture2D> albedo);
+void SetUUID(uint64_t uuid);
 
 int BatchCount();
 int RenderTime();

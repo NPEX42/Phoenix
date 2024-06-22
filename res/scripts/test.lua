@@ -1,14 +1,16 @@
 X = 0;
 Y = 0;
 W = 0;
+ANGLE = 0;
 
 
 function Init()
     W = math.random(10, 100);
+    ANGLE = math.random() * math.pi * 2;
 end
 
 function Render()
-    DrawSprite(X, Y, W, W, "Snom");
+    DrawRotatedSprite(X, Y, W, W, ANGLE, "Snom");
 end
 
 function Update()

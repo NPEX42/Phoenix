@@ -4,4 +4,5 @@ extern "C" {
 
     // DrawSprite(x, y, w, h, sprite)
     int DrawSprite(lua_State* L);
+    int DrawRotatedSprite(lua_State* L);
 }
