@@ -25,8 +25,12 @@ namespace phnx {
 
         int FrameRate( ) const {return 1 / mDeltaTime;}
         float DeltaTime() const {return mDeltaTime;}
+
+        void HasMainMenu(bool state) {mHasMainMenu = state;}
+
     private:
         Window* mWindow;
         float mDeltaTime, mFrameStart;
+        bool mHasMainMenu;
     }; 
 }

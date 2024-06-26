@@ -1,6 +1,8 @@
 #include "Phoenix/Log.hpp"
+#include "Phoenix/gfx/Api.hpp"
 #include "glad/glad.h"
 #include <Phoenix/gfx/ogl/Buffer.hpp>
+#include <cstddef>
 #include <cstdint>
 #include <sys/types.h>
 
@@ -43,5 +45,49 @@ namespace GL {
             case phnx::gfx::UNIFORM: return GL_UNIFORM_BUFFER;
         }
         return GL_ARRAY_BUFFER;
+    }
+
+    template<>
+    void Buffer::SetData(const uint16_t* data, uint32_t size) {
+                if (mHasAllocated) {
+                    GL_CHECK(glBufferSubData(mType, 0, size * sizeof(uint16_t), data));
+                } else {
+                    PHNX_DEBUG("Allocated %d Bytes In VBO %d", size * sizeof(uint16_t), mID);
+                    GL_CHECK(glBufferData(mType, size * sizeof(uint16_t), data, GL_STREAM_DRAW));
+                    mHasAllocated = true;
+                }
+            }
+
+            template<>
+    void Buffer::SetData(const phnx::Vertex* data, uint32_t size) {
+                if (mHasAllocated) {
+                    GL_CHECK(glBufferSubData(mType, 0, size * sizeof(phnx::Vertex), data));
+                } else {
+                    PHNX_DEBUG("Allocated %d Bytes In VBO %d", size * sizeof(phnx::Vertex), mID);
+                    GL_CHECK(glBufferData(mType, size * sizeof(phnx::Vertex), data, GL_STREAM_DRAW));
+                    mHasAllocated = true;
+                }
+            }
+
+
+    void Buffer::Destroy() {
+        glDeleteBuffers(1, &mID);
+    }
+
+    void* Buffer::Map() {
+        Bind();
+        void* ptr = glMapBuffer(mType, GL_READ_WRITE);
+        Unbind();
+        return ptr;
+    }
+
+    void Buffer::Unmap() {
+        Bind();
+        glUnmapBuffer(mType);
+        Unbind();
+    }
+
+    void Buffer::Reserve(uint32_t size) {
+        GL_CHECK(glBufferData(mType, size, nullptr, GL_STREAM_DRAW));
     }
 }

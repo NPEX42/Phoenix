@@ -35,6 +35,7 @@ links({
 	"png16",
 	"z",
 	"fmt",
+	"assimp",
 })
 
 filter("system:linux")
@@ -107,6 +108,7 @@ links({
 	"freetype",
 	"png16",
 	"z",
+	"assimp",
 	"Phoenix",
 })
 -- -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 

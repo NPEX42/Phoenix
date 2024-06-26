@@ -11,12 +11,12 @@ namespace GL {
     class Buffer : public phnx::gfx::IBuffer {
         public:
 
-            virtual void Bind();
-            virtual void Unbind();
-            virtual uint32_t const Size();
-            virtual uint32_t const Handle();
+            virtual void Bind() override;
+            virtual void Unbind() override;
+            virtual uint32_t const Size() override;
+            virtual uint32_t const Handle() override;
             template<typename T>
-            void SetData(T* data, uint32_t size) {
+            void SetData(const T* data, uint32_t size) {
                 if (mHasAllocated) {
                     GL_CHECK(glBufferSubData(mType, 0, size * sizeof(T), data));
                 } else {
@@ -26,9 +26,18 @@ namespace GL {
                 }
             }
 
-            virtual void SetLayout(int index, phnx::gfx::DataType type, int components, uint32_t stride, uint32_t offset);
+            virtual void SetLayout(int index, phnx::gfx::DataType type, int components, uint32_t stride, uint32_t offset) override;
+            virtual void Destroy() override;
 
-            Buffer(phnx::gfx::BufferType type);       
+            virtual void* Map() override;
+            virtual void  Unmap() override;
+
+            virtual void Reserve(uint32_t size) override;
+
+
+
+            Buffer(phnx::gfx::BufferType type); 
+
     private:
         uint32_t mID = 0, mSize = 0, mType = GL_ARRAY_BUFFER;
         bool mHasAllocated = false;

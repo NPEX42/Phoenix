@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Phoenix/Common.hpp"
+#include "glm/fwd.hpp"
 #include <cstdint>
 #include <memory>
 #include <string>
@@ -17,6 +19,10 @@ public:
 
 public:
     void SetInt(std::string name, int value);
+    void SetFloat4(std::string name, float x, float y, float z, float w);
+    void SetMatrix4(std::string name, const glm::mat4& mat);
+
+    void Validate();
 
 private:
     uint32_t mID = 0;
@@ -24,6 +30,8 @@ private:
 
     uint32_t GetUniformLocation(std::string name);
 };
+
+Ref<Shader> LoadShader(std::string vsPath, std::string fsPath);
 
 class ComputeShader {
 public:

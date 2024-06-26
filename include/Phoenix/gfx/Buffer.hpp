@@ -1,10 +1,10 @@
 #pragma once
 #include <cstdint>
+
+#include "Api.hpp"
+
 namespace phnx {
     namespace gfx {
-        enum DataType {
-            F32, F64, U8, U16, U32, U64, S8, S16, S32, S64
-        };
         class IBuffer {
         public:
             virtual void Bind() = 0;

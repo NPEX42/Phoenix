@@ -16,7 +16,7 @@ make config=$conf || exit
 fi
 
 if [ "$1" == "gdb" ]; then
-    gdb ./bin/PhoenixEditor
+    gdb ./bin/Sandbox
     exit
 fi
 
@@ -29,4 +29,4 @@ if [ "$1" == "pkg" ]; then
     exit
 fi
 
-./bin/PhoenixEditor
+./bin/Sandbox

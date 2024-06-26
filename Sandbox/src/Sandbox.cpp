@@ -1,13 +1,20 @@
 #include "Phoenix/Application2D.hpp"
 #include "Phoenix/AssetManager.hpp"
 #include <Phoenix/Graphics.hpp>
+#include "Phoenix/Camera.hpp"
+#include "Phoenix/Common.hpp"
 #include "Phoenix/Log.hpp"
+#include "Phoenix/Mesh.hpp"
+#include "Phoenix/MeshImporter.hpp"
+#include "Phoenix/RenderPipeline.hpp"
 #include "Phoenix/Util.hpp"
 #include <Phoenix/gfx/ui.hpp>
+#include "Phoenix/gfx/ogl/GLRenderPipeline.hpp"
 #include "Phoenix/scripting/Script.hpp"
 #include "fmt/core.h"
 #include "glad/glad.h"
 #include "glm/ext/vector_float2.hpp"
+#include "glm/trigonometric.hpp"
 #include "imgui.h"
 #include "nfd.h"
 #include "yaml-cpp/node/node.h"
@@ -21,208 +28,86 @@
 #include <nfd.hpp>
 #include <vector>
 
+using namespace phnx;
+
 class Sandbox : public phnx::Application2D {
 
-    bool mShowDemoWindow = false;
-    std::shared_ptr<phnx::gfx::Framebuffer> mFB;
+    std::shared_ptr<RenderPipeline> mPipeline;
+    Ref<Mesh> mMesh;
+    Ref<ICamera> mCamera;
+    Ref<gfx::Shader> mShader;
 
-    std::shared_ptr<phnx::gfx::Texture2D> mSnom, mComputeOutput;
-
-    float mScale = 0, mViewportScale = 1.0f;
-    glm::vec2 pos;
-
-    phnx::gfx::Shader* mShader = nullptr;
-
-    YAML::Node mConfig;
-
-    std::string mActiveTextureName;
-    char nameBuffer[128];
-
-    std::shared_ptr<phnx::gfx::ComputeShader> mCompute;
-
-    std::shared_ptr<phnx::gfx::TextureAtlas> mAtlas;
-    std::string mTileID;
-
-    std::vector<std::shared_ptr<phnx::SpriteScript>> mScripts;
-
-
-    #define MAX_SPRITES (1024)
+    glm::vec3 mCamPos = {00, 0, 10}, mCamRot = {0, 0, 0}, mMeshPos = {0, 0, 0}, mMeshRot = {0, 0, 0};
 
     bool OnCreate() override {
-
-        NFD::Init();
-
-        mConfig = phnx::LoadYAML("res/config.yaml");
-        mFB = phnx::gfx::CreateFramebuffer(mConfig["Viewport"]["Width"].as<int>(), mConfig["Viewport"]["Height"].as<int>(), 2);
+        mPipeline = CreateGLPipeline();
+        mShader = phnx::gfx::LoadShader("res/shaders/unlit/Simple.vs.glsl", "res/shaders/unlit/Simple.fs.glsl");
         
-        mShader = phnx::gfx::Shader::Load("res/shaders/simple.vs", "res/shaders/simple.frag");
-        phnx::gfx::SetFrameSize(mFB->Width, mFB->Height);
-        mShader->SetInt("uAlbedo", 0);
-
-        phnx::AssetManager::LoadTexturesFromTOML("res/textures.toml");
-        mSnom = phnx::AssetManager::GetTextureByName("Snom");
-
-        phnx::gfx::SetAlbedo(mSnom);
-
-        mActiveTextureName = "Snom";
-
-        mCompute = phnx::gfx::ComputeShader::Load("res/shaders/uv.compute");
-
-        mComputeOutput = phnx::gfx::CreateTexture2D(mFB->Width, mFB->Height, nullptr, GL_RGBA32F);
-
-        mComputeOutput->BindImage(0);
-        mCompute->SetInt("imgOutput", 0);
-        mCompute->SetInt("imageInput", 1);
-        mCompute->SetFloat("uRadius", mScale);
-
-
-        glBindImageTexture(1, mFB->ColorBuffer[0], 0, GL_FALSE, 0, GL_READ_WRITE, GL_RGBA8);
-
-        mCompute->DispatchSync(mFB->Width,mFB->Height);
-
-        mAtlas = std::make_shared<phnx::gfx::TextureAtlas>(phnx::AssetManager::GetTextureByName("Tiles"));
-        mAtlas->GenerateTiles(16, 16);
-
-        mAtlas->Texture()->SetFilterModes(GL_NEAREST, GL_NEAREST);
+        mShader->Validate();
         
-        for (int i = 0; i < MAX_SPRITES; i++) {
-            mScripts.push_back(std::make_shared<phnx::SpriteScript>("res/scripts/test.lua"));
-            mScripts[i]->Init();
-        }
+        mMesh = ImportFBX("res/meshes/Quad.obj");
+        mCamera = MakeRef<PerspectiveCamera>();
+        mCamera->RecalculateProjection();
 
+        mCamera->SetPosition(mCamPos);
+        mCamera->SetRotation(mCamRot);
+
+        mShader->Bind();
+        mShader->SetFloat4("uTint", 1, 1, 1, 1);
+        mShader->SetMatrix4("uVP", mCamera->ProjectionMatrix() * mCamera->ViewMatrix());
+        mPipeline->SetShader(mShader);
+
+        mCamera->SetFarPlane(10000);
         return true;
     }
 
     bool OnUpdate() override {
-        for (int i = 0; i < MAX_SPRITES; i++) {
-            mScripts[i]->Update();
-        }
-        mScale += 2 * M_PI * DeltaTime();
+
+        mMeshRot.y += DeltaTime() * glm::radians<float>(10);
+
         return true;
     }
 
     void OnRender() override {
-        mFB->Bind();
-        mShader->Bind();
-        phnx::gfx::SetAlbedo(mSnom);
-        phnx::gfx::Clear(0.0f, 0.2f, 0.3f, 1.0f);
-        phnx::gfx::RotatedQuad(pos, mScale, {50, 50 * mSnom->Aspect()}, {1, 1, 1});
-        //phnx::gfx::TextureRect(mAtlas->Texture(), {128, 128}, mAtlas->GetTileRect(mTileID), {256, 256});
-        for (int i = 0; i < MAX_SPRITES; i++) {
-            mScripts[i]->Render();
-        }
-
-        phnx::gfx::Flush();
-        mFB->Unbind();
-
-        mCompute->DispatchSync(mFB->Width, mFB->Height);
+        
+        mPipeline->ClearColor({0.1, 0.2, 0.3, 1.0});
+        mPipeline->SetScale({100, 100, 100});
+        mPipeline->SetRotation(mMeshRot);
+        mPipeline->SetPosition(mMeshPos);
+        mPipeline->DrawMesh(mMesh);
     }
 
     void OnDestroy() override {
-        ImGui::SaveIniSettingsToDisk("imgui.ini");
-        phnx::SaveYAML("res/config.yaml", mConfig);
-
-        mAtlas->ExportTOML("res/tiles.toml");
     }
 
     void OnImGui() override {
-        phnx::ui::Dockspace();
-        ImGui::Begin("Properties", NULL, ImGuiWindowFlags_MenuBar);
-        if (ImGui::BeginMenuBar()) {
-            if (ImGui::BeginMenu("Debug")) {
-                if (ImGui::MenuItem("Demo Window")) {
-                    mShowDemoWindow = true;
-                }
+        ImGui::Text("Triangles: %d", mMesh->TriangleCount());
+        ImGui::Text("Vertices: %d", mMesh->VertexCount());
+        ImGui::Text("Mesh Size: %d Bytes", mMesh->Size());
 
-                if (ImGui::MenuItem("Reload Config")) {
-                    mConfig = phnx::LoadYAML("res/config.yaml");
-                    mFB->Resize(mConfig["Viewport"]["Width"].as<int>(), mConfig["Viewport"]["Height"].as<int>());
-                    phnx::gfx::SetFrameSize(mFB->Width, mFB->Height);
-                    phnx::AssetManager::ReloadTexturesFromTOML("res/textures.toml");
-                    mSnom = phnx::AssetManager::GetTextureByName(mActiveTextureName);
-                }
-
-                ImGui::EndMenu();
-            }
-            ImGui::EndMenuBar();
+        ImGui::SeparatorText("Camera Controls");
+        if (ImGui::DragFloat3("Position##Cam", &mCamPos.x, 0.1f)) {
+            mCamera->SetPosition(mCamPos);
+            mShader->SetMatrix4("uVP", mCamera->ProjectionMatrix() * mCamera->ViewMatrix());
         }
 
-        if (ImGui::SliderFloat("Scale", &mScale, 0, 2 * M_PI)) {
-            mCompute->SetFloat("uRadius", mScale);
-        }
-        ImGui::SliderFloat("Viewport Scale", &mViewportScale, 0.01f, 10.0f);
-        if (ImGui::SliderFloat2("Snom Position", &pos.x, 0, mFB->Width)) {
-            mCompute->SetFloat2("uPosition", pos.x, pos.y);
-        }
-        ImGui::Text("Viewport Size: %dx%d", phnx::gfx::FrameWidth(), phnx::gfx::FrameHeight());
-        ImGui::Text("FPS: %d", FrameRate());
-        ImGui::End();
-
-        ImGui::Begin("Viewport");
-        ImGui::Image(
-            (ImTextureID) (uint64_t)mFB->ColorBuffer[0], 
-            {mFB->Width * mViewportScale, mFB->Height * mViewportScale},
-            {0, 1}, {1, 0}
-            );
-        ImGui::End();
-
-
-        ImGui::Begin("Texture Manager");
-        if (ImGui::BeginCombo("Current Texture", mActiveTextureName.c_str())) {
-            for (const auto& texture : phnx::AssetManager::Textures()) {
-                if (ImGui::Selectable(texture.first.c_str(), mActiveTextureName == texture.first)) {
-                    mActiveTextureName = texture.first;
-                    phnx::gfx::SetAlbedo(phnx::AssetManager::GetTextureByName(mActiveTextureName));
-
-                    strcpy(nameBuffer, mActiveTextureName.c_str());
-                }
-            }
-            ImGui::EndCombo();
-        }
-        
-        (ImGui::InputText("Name", nameBuffer, 128));
-
-        if (ImGui::ImageButton("##TextureSelection", (ImTextureID)(uint64_t) mSnom->ID(), {128, 128 * mSnom->Aspect()})) {
-            nfdchar_t* path;
-            nfdresult_t result = NFD_OpenDialog(&path, nullptr, 0, nullptr);
-            if (result == NFD_OKAY) {
-                PHNX_INFO("Path: %s", path);
-                phnx::AssetManager::LoadTexture2D(mActiveTextureName, path);
-            }
+        if (ImGui::DragFloat3("Rotation##Cam", &mCamRot.x, 0.01, -2*M_PI, 2 * M_PI)) {
+            mCamera->SetRotation(mCamRot);
+            mShader->SetMatrix4("uVP", mCamera->ViewProjection());
         }
 
-    
+        if (ImGui::Button("Reset")) {
+            mCamera->SetPosition({0, 0, 10});
+            mCamera->SetRotation({0, 0, 0});
+            mShader->SetMatrix4("uVP", mCamera->ViewProjection());
 
-        if (ImGui::Button("Update") && strlen(nameBuffer) > 0) {
-            mActiveTextureName = nameBuffer;
-            phnx::AssetManager::SetTextureByName(nameBuffer, mSnom);
+            mCamPos = mCamera->Position();
+            mCamRot = mCamera->Rotation();
         }
-        
-        if (ImGui::BeginChild("Tilemap", {20 * 16 + 24, 8 * 16 + 24}, ImGuiChildFlags_Border | ImGuiChildFlags_ResizeX | ImGuiChildFlags_ResizeY)) {
 
-        for (int y = 0; y < mAtlas->Rows(); y++) {
-            for (int x = 0; x < mAtlas->Columns(); x++) {
-                phnx::gfx::RectUVs uvs = mAtlas->GetTileRectUV(fmt::format("tile_{}_{}", x, y));
+        ImGui::SeparatorText("Mesh Controls");
 
-                ImGui::Image((ImTextureID)(uint64_t) mAtlas->Texture()->ID(), {32, 32},
-                    {uvs.UV0.x, uvs.UV0.y}, {uvs.UV1.x, uvs.UV1.y}
-                );
-
-                if (ImGui::IsItemClicked(ImGuiMouseButton_Left)) {
-                    mTileID = fmt::format("tile_{}_{}", x, y);
-                }
-
-                ImGui::SameLine(0, 3);
-            }
-             ImGui::NewLine();
-        }
-        ImGui::EndChildFrame();
-        }
-        ImGui::End();
-
-        if (mShowDemoWindow) {
-            ImGui::ShowDemoWindow(&mShowDemoWindow);
-        }
+        ImGui::DragFloat3("Position##Mesh", &mMeshPos.x);
     }
 
     phnx::WindowSpec WindowSpecs() override {

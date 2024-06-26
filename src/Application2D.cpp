@@ -37,7 +37,7 @@ namespace phnx {
             OnRender();
             ui::BeginFrame();
 
-            if (ImGui::BeginMainMenuBar()) {
+            if (mHasMainMenu && ImGui::BeginMainMenuBar()) {
                 OnImGuiMainMenu();
                 ImGui::EndMainMenuBar();
             }

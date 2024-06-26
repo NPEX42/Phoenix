@@ -25,7 +25,10 @@
 #include <Phoenix/project/Component.hpp>
 #include <vector>
 
+#include <Phoenix/RenderPipeline.hpp>
+
 using namespace phnx::ecs;
+using namespace phnx;
 
 class Editor : public phnx::Application2D {
 

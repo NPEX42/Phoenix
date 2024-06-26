@@ -25,7 +25,7 @@ INCLUDES += -Ivendor/include -Iinclude
 FORCE_INCLUDE +=
 ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
 ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-LIBS += -lglfw3 -llua -lyaml-cpp -lnfd -lfreetype -lpng16 -lz -lfmt -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0 -ldl -lm
+LIBS += -lglfw3 -llua -lyaml-cpp -lnfd -lfreetype -lpng16 -lz -lfmt -lassimp -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0 -ldl -lm
 LDDEPS +=
 LINKCMD = $(AR) -rcs "$@" $(OBJECTS)
 define PREBUILDCMDS
@@ -67,7 +67,10 @@ GENERATED += $(OBJDIR)/Buffer.o
 GENERATED += $(OBJDIR)/Component.o
 GENERATED += $(OBJDIR)/ECS.o
 GENERATED += $(OBJDIR)/Entity.o
+GENERATED += $(OBJDIR)/GLRenderPipeline.o
 GENERATED += $(OBJDIR)/Log.o
+GENERATED += $(OBJDIR)/Mesh.o
+GENERATED += $(OBJDIR)/MeshImporter.o
 GENERATED += $(OBJDIR)/OGL.o
 GENERATED += $(OBJDIR)/Phoenix.o
 GENERATED += $(OBJDIR)/Project.o
@@ -96,7 +99,10 @@ OBJECTS += $(OBJDIR)/Buffer.o
 OBJECTS += $(OBJDIR)/Component.o
 OBJECTS += $(OBJDIR)/ECS.o
 OBJECTS += $(OBJDIR)/Entity.o
+OBJECTS += $(OBJDIR)/GLRenderPipeline.o
 OBJECTS += $(OBJDIR)/Log.o
+OBJECTS += $(OBJDIR)/Mesh.o
+OBJECTS += $(OBJDIR)/MeshImporter.o
 OBJECTS += $(OBJDIR)/OGL.o
 OBJECTS += $(OBJDIR)/Phoenix.o
 OBJECTS += $(OBJDIR)/Project.o
@@ -215,6 +221,12 @@ $(OBJDIR)/imgui_widgets.o: src/ImGui/imgui_widgets.cpp
 $(OBJDIR)/Log.o: src/Log.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Mesh.o: src/Mesh.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/MeshImporter.o: src/MeshImporter.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Phoenix.o: src/Phoenix.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
@@ -237,6 +249,9 @@ $(OBJDIR)/TextureAtlas.o: src/gfx/TextureAtlas.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Buffer.o: src/gfx/ogl/Buffer.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/GLRenderPipeline.o: src/gfx/ogl/GLRenderPipeline.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/OGL.o: src/gfx/ogl/OGL.cpp

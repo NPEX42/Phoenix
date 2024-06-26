@@ -1,5 +1,7 @@
+#include "Phoenix/Common.hpp"
 #include "Phoenix/Util.hpp"
 #include "glad/glad.h"
+#include "glm/fwd.hpp"
 #include <cstdint>
 #include <cstdio>
 #include <Phoenix/gfx/Shader.hpp>
@@ -88,6 +90,27 @@ Shader::Shader(std::string vsSource, std::string fsSource) : mID(0) {
 }
 
 void Shader::SetInt(std::string name, int value) { glUniform1i(GetUniformLocation(name), value); }
+void Shader::SetFloat4(std::string name, float x, float y, float z, float w) {
+    glUniform4f(GetUniformLocation(name), x, y, z, w);
+}
+
+void Shader::SetMatrix4(std::string name, const glm::mat4& mat) {
+    glUniformMatrix4fv(GetUniformLocation(name), 1, GL_FALSE, &mat[0][0]);
+}
+
+void Shader::Validate() {
+    int status;
+    glValidateProgram(mID);
+    glGetProgramiv(mID, GL_VALIDATE_STATUS, &status);
+    if (status == GL_FALSE) {
+        GLsizei log_length = 0;
+        GLchar message[1024];
+        glGetProgramInfoLog(mID, 1024, &log_length, message);
+        printf("Program Validation Failed:\n%s\n", message);
+    } else {
+        printf("Shader #%d Is Validated\n", mID);
+    }
+}
 
 // TODO(George): Replace Raw string loading with util's LoadString Function.
 Shader *Shader::Load(std::string vsPath, std::string fsPath) {
@@ -104,6 +127,22 @@ Shader *Shader::Load(std::string vsPath, std::string fsPath) {
     std::string fsSrc = fs_buffer.str();
 
     return new Shader(vsSrc, fsSrc);
+}
+
+Ref<Shader> LoadShader(std::string vsPath, std::string fsPath) {
+    std::ifstream vs_file(vsPath);
+    std::stringstream buffer;
+    buffer << vs_file.rdbuf();
+
+    std::string vsSrc = buffer.str();
+
+    std::ifstream fs_file(fsPath);
+    std::stringstream fs_buffer;
+    fs_buffer << fs_file.rdbuf();
+
+    std::string fsSrc = fs_buffer.str();
+
+    return MakeRef<Shader>(vsSrc, fsSrc);
 }
 
 
