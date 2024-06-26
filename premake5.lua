@@ -35,8 +35,11 @@ links({
 	"png16",
 	"z",
 	"fmt",
-	"assimp",
 })
+
+if (os.open("vendor/lib/libassimp.a")) then
+	
+end
 
 filter("system:linux")
 	defines({ "PNHX_LINUX" })
